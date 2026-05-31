@@ -91,6 +91,12 @@
   @apply dark:prose-invert prose-code:text-neutral-800 dark:prose-code:bg-neutral-900 dark:prose-code:text-white dark:prose-pre:bg-neutral-900;
 }
 
+.dark .typography :where(h2, h3):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  --tw-prose-headings: var(--tw-prose-invert-headings);
+  --tw-prose-links: var(--tw-prose-invert-links);
+  color: var(--tw-prose-invert-headings);
+}
+
 .prose {
   margin: 0;
 }

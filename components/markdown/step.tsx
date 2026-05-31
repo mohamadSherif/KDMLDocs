@@ -32,7 +32,7 @@ export function Step({ children }: PropsWithChildren<StepProps>) {
 export function StepItem({ children, title }: StepItemProps) {
   return (
     <div className="pt-0.5!">
-      {title && <h3 className="mt-0!">{title}</h3>}
+      {title && <h3 className="mt-0! text-foreground!">{title}</h3>}
       <div>{children}</div>
     </div>
   )
