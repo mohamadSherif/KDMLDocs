@@ -9,6 +9,16 @@ export const Documents: Paths[] = [
   {
     title: 'Installation',
     href: '/installation',
+    items: [
+      {
+        title: 'N-Link Hardware',
+        href: '/n-link',
+      },
+      {
+        title: 'App Install & Setup',
+        href: '/app',
+      },
+    ],
   },
   {
     spacer: true,
