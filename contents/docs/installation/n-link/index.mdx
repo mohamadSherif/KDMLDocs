@@ -6,53 +6,55 @@ keywords: ["KDMLink", "N-Link", "hardware", "install", "OBD-II", "vehicle"]
 
 ## N-Link Hardware Install
 
-The **N-Link** is the hardware interface that connects KDMLink to your vehicle's ECU. This
-page walks through getting it physically installed and powered on. Once it's in, head over to
-[App Install & Setup](/docs/installation/app) to pair it with your phone.
+The **N-Link** is the hardware interface that connects KDMLink to your vehicle for logging.
+Choose the install method that matches your vehicle:
+
+<CardGrid>
+  <Card
+    subtitle="Method 1"
+    title="Plug and Play"
+    description="Connect the N-Link with CAN bus harness"
+    href="/docs/installation/n-link/plug-and-play"
+  />
+  <Card
+    subtitle="Method 2"
+    title="Wire Tap"
+    description="Connect the N-Link by tapping into the CAN wiring."
+    href="/docs/installation/n-link/wire-tap"
+  />
+</CardGrid>
+
+Check [Compatible Vehicles](/docs/compatible-vehicles) before choosing an install method. Once
+the N-Link is installed and powered, head over to [App Install & Setup](/docs/installation/app)
+to pair it with your phone.
 
 ## What's in the box
 
-_To be transcribed._
+- N-Link module
+- CAN bus harness (for plug-and-play installs) or wire-tap harness (for wire-tap installs)
+- Power harness with inline fuse
+- KDMLink sticker
 
 ## Before you start
 
-_To be transcribed — vehicle prerequisites, tools needed, etc._
+Park the vehicle safely, turn it off, and confirm that your phone and vehicle are compatible.
+For wire-tap installs, verify the exact wire locations for your vehicle before making any
+connections. Required tools:
+- Phillips screwdriver
+- Pliers or fuse puller (for power harness fuse)
+- Zip ties or double-sided tape to secure the N-Link and harnesses
 
-<Step>
-<StepItem title="Locate the OBD-II port">
+## Compatibility
 
-_To be transcribed — where the port is on supported vehicles._
-
-</StepItem>
-
-<StepItem title="Plug in the N-Link">
-
-_To be transcribed — orientation, seating, cable routing._
-
-</StepItem>
-
-<StepItem title="Power on the vehicle">
-
-_To be transcribed — ignition vs. accessory, what the indicator lights mean._
-
-</StepItem>
-
-<StepItem title="Confirm the N-Link is powered">
-
-_To be transcribed — what a healthy boot looks like._
-
-</StepItem>
-</Step>
-
-## Vehicle compatibility
-
-_To be transcribed — list of supported makes, models, and model years._
+For vehicle, phone, and install-method requirements, see
+[Compatible Vehicles](/docs/compatible-vehicles).
 
 ## Troubleshooting
 
-_To be transcribed — no power, no indicator, intermittent connection, etc._
-
-## Next step
+- **No power** — confirm the connector or wire-tap power connection is fully seated.
+- **N-Link does not appear in the app** — confirm the N-Link is powered, then continue to
+  [App Install & Setup](/docs/installation/app).
+- **Vehicle data not appearing in the app** — confirm the N-Link is properly connected to the
 
 Once the N-Link is installed and powered, continue to
 [App Install & Setup](/docs/installation/app) to pair it with the KDMLink app.

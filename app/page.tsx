@@ -7,8 +7,8 @@ export default function Home() {
     <section className="flex min-h-[86.5vh] flex-col items-center justify-center px-2 py-8 text-center">
       <h1 className="mb-4 text-4xl font-bold sm:text-7xl">KDMLink</h1>
       <p className="mb-8 max-w-150 text-foreground sm:text-base">
-        Tuning, logging, and diagnostics for Korean cars. Install the app, connect your device, and
-        get started.
+        Data logging and RaceChrono integration for Korean cars. Install the app, connect your
+        device, and get started.
       </p>
 
       <div className="flex items-center gap-5">

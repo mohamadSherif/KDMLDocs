@@ -1,485 +1,230 @@
 [
   {
-    "slug": "/basic-setup/changelog",
-    "title": "Changelog",
-    "description": "Changelogs and improvements to the Documents projects.",
-    "content": "## Added\n\n**Linting and Formatting**:\n\n* Added `pnpm run lint` and `pnpm run lint:fix` scripts to automate linting tasks.\n* Added `pnpm run format` and `pnpm run format:check` scripts to ensure consistent code formatting.\n\n**SEO Enhancements**:\n\n* Added an SEO component to MDX pages to dynamically include `keywords` and `lastModified` metadata for improved SEO generation.\n\n## Updated\n\n**Next.js Upgrade**:\n\n* Upgraded the project from **Next.js 14** to **Next.js 15**, leveraging the latest features and performance improvements.\n\n**Codebase Improvements**:\n\n* Reordered imports across the project files for better consistency and readability.\n\n**Mermaid Component**:\n\n* Fixed an ID bug that caused rendering issues when multiple Mermaid diagrams were included in MDX pages.\n* Improved initialization and rendering logic to prevent duplicate diagram rendering.\n",
+    "slug": "/app",
+    "title": "Overview",
+    "description": "An overview of the KDMLink app and its main features.",
+    "content": "## The App\n\nOnce installed and connected, KDMLink gives you a single place to monitor live data, record\nlogs, and connect those sessions with RaceChrono. This page is a high-level overview — each\nfeature will get its own page over time.\n\n## Main features\n\n## Dashboard\n\nReal-time gauges and sensor readouts. *Details to come.*\n\n## Data logging\n\nStart, stop, and save logs of your sessions for later review. *Details to come.*\n\n## RaceChrono integration\n\nConnect KDMLink data with RaceChrono for session review and lap analysis. *Details to come.*\n",
     "_searchMeta": {
-      "cleanContent": "added linting and formatting: added pnpm run lint and pnpm run lint:fix scripts to automate linting tasks added pnpm run format and pnpm run format:check scripts to ensure consistent code formatting seo enhancements: added an seo component to mdx pages to dynamically include keywords and lastmodified metadata for improved seo generation updated next js upgrade: upgraded the project from next js 14 to next js 15 leveraging the latest features and performance improvements codebase improvements: reordered imports across the project files for better consistency and readability mermaid component: fixed an id bug that caused rendering issues when multiple mermaid diagrams were included in mdx pages improved initialization and rendering logic to prevent duplicate diagram rendering",
+      "cleanContent": "the app once installed and connected kdmlink gives you a single place to monitor live data record logs and connect those sessions with racechrono this page is a high-level overview each feature will get its own page over time main features dashboard real-time gauges and sensor readouts details to come data logging start stop and save logs of your sessions for later review details to come racechrono integration connect kdmlink data with racechrono for session review and lap analysis details to come",
       "headings": [
-        "Added",
-        "Updated"
+        "The App",
+        "Main features",
+        "Dashboard",
+        "Data logging",
+        "RaceChrono integration"
       ],
       "keywords": [
-        "changelog",
-        "guide",
-        "nextjs",
-        "documents",
-        "Added",
-        "Updated",
-        "Linting and Formatting",
-        "SEO Enhancements",
-        "Next.js Upgrade",
-        "Next.js 14",
-        "Next.js 15",
-        "Codebase Improvements",
-        "Mermaid Component",
-        "pnpm run lint",
-        "pnpm run lint:fix",
-        "pnpm run format",
-        "pnpm run format:check",
-        "keywords",
-        "lastModified"
+        "KDMLink",
+        "app",
+        "features",
+        "logging",
+        "RaceChrono",
+        "The App",
+        "Main features",
+        "Dashboard",
+        "Data logging",
+        "RaceChrono integration"
       ]
     }
   },
   {
-    "slug": "/basic-setup",
-    "title": "Introduction",
-    "description": "This section provides an overview of how to get started with the Documents, Next.js Document Starter Kit.",
-    "content": "![Banner](/images/banner.png \"Documents\")\n\n## Documents\n\n**Documents** is a lightweight, modular starter kit built with **Next.js**, **React**, **Tailwind CSS**, and **TypeScript**. It’s designed to help you\nlaunch structured, professional documentation without spending time on boilerplate.\n\nWhether you're building product manuals, internal systems guides, or dev documentation, Documents gives you a clean foundation that’s easy to\nextend and maintain.\n\n## Why use Documents?\n\nThis kit was built to simplify how teams manage and publish documentation. It works across projects of all sizes—from a single\nreadme to enterprise knowledge bases.\n\nWith MDX, reusable components, and Tailwind styling, it keeps your workflow efficient without compromising flexibility.\n\nUse it for:\n\n* **Product Guides** – Setup, usage, and troubleshooting\n* **Internal Docs** – Processes, policies, and team references\n* **Technical Manuals** – APIs, SDKs, architecture walkthroughs\n\nCustomize the UI and structure to match your brand or workflow—no lock-in.\n\n## Core Features\n\n| Feature                              | Description                                                                 |\n| ------------------------------------ | --------------------------------------------------------------------------- |\n| **Write in Markdown/MDX**            | Combine Markdown with components and Mermaid.js for rich content.           |\n| **Flexible Navigation**              | Multi-level menus, page hierarchy, and auto-generated TOCs.                 |\n| **Code Support**                     | Syntax highlighting, code tabs, and one-click copy.                         |\n| **Search**                           | Fuzzy matching with highlight and instant results.                          |\n| **Responsive Design**                | Built-in light/dark mode with mobile support.                               |\n| **Math + Tables**                    | LaTeX rendering and clean table styling.                                    |\n| **SEO Defaults**                     | Preconfigured meta, Open Graph, and structured data.                        |\n| **AI Docs (Upcoming)**               | AI tools for smart search and content generation (coming soon).             |\n\n## Using This Kit\n\nNavigation is on the left. Pages flow from setup to advanced features, but you're free to jump around.\n\nUse the table of contents on the right to skip through sections.\n\nStart with the [Installation Guide](/docs/basic-setup/installation).\n\n## Community Support\n\nGot questions? Reach out via:\n\n* [GitHub](https://github.com/rubixvi/rubix-documents)\n* [Twitter](https://x.com/rubixstory)\n* [Facebook](https://www.facebook.com/rubixstudios)\n",
+    "slug": "/compatible-vehicles",
+    "title": "Compatible Vehicles",
+    "description": "Supported Hyundai N vehicles and requirements for KDMLink.",
+    "content": "## Compatible Vehicles\n\nKDMLink is built for supported Hyundai N vehicles. Check this list before installing the\n**N-Link** hardware or pairing the app.\n\n## Supported N cars\n\n| Vehicle | Notes |\n| --- | --- |\n| Hyundai Veloster N | Plug and play. |\n| Hyundai Elantra N | Wire tap method. |\n| Hyundai Kona N | Plug and play. |\n| Hyundai i20 N | Coming soon. |\n| Hyundai i30 N | Coming soon. |\n| Hyundai i30 Fastback N | Coming soon. |\n| Hyundai IONIQ 5 N | Coming soon. |\n| Hyundai IONIQ 6 N | Coming soon. |\n\nN Line trims are not the same as full N vehicles. If your car is an N Line model, confirm\nsupport before installing.\n\n## Requirements\n\n* KDMLink **N-Link** interface\n* KDMLink app on iPhone or Android\n* Supported Hyundai N vehicle\n* Correct N-Link install method for your vehicle\n\n## Install methods\n\n* [**Plug and play**](/docs/installation/n-link/plug-and-play) — for supported vehicles where\n  the N-Link can connect directly at the OBD-II port.\n* [**Wire tap**](/docs/installation/n-link/wire-tap) — for supported vehicles that require\n  tapping the correct signal and power wires for a clean N-Link connection.\n\n## Next step\n\nAfter confirming your vehicle is supported, continue to\n[N-Link Hardware](/docs/installation/n-link) for install options.\n",
     "_searchMeta": {
-      "cleanContent": "banner documents documents is a lightweight modular starter kit built with next js react tailwind css and typescript it s designed to help you launch structured professional documentation without spending time on boilerplate whether you re building product manuals internal systems guides or dev documentation documents gives you a clean foundation that s easy to extend and maintain why use documents this kit was built to simplify how teams manage and publish documentation it works across projects of all sizes from a single readme to enterprise knowledge bases with mdx reusable components and tailwind styling it keeps your workflow efficient without compromising flexibility use it for: product guides setup usage and troubleshooting internal docs processes policies and team references technical manuals apis sdks architecture walkthroughs customize the ui and structure to match your brand or workflow no lock-in core features feature description------------------------------------ ---------------------------------------------------------------------------write in markdown mdx combine markdown with components and mermaid js for rich content flexible navigation multi-level menus page hierarchy and auto-generated tocs code support syntax highlighting code tabs and one-click copy search fuzzy matching with highlight and instant results responsive design built-in light dark mode with mobile support math tables latex rendering and clean table styling seo defaults preconfigured meta open graph and structured data ai docs upcoming ai tools for smart search and content generation coming soon using this kit navigation is on the left pages flow from setup to advanced features but you re free to jump around use the table of contents on the right to skip through sections start with the installation guide community support got questions reach out via: github twitter facebook",
+      "cleanContent": "compatible vehicles kdmlink is built for supported hyundai n vehicles check this list before installing the n-link hardware or pairing the app supported n cars vehicle notes--- ---hyundai veloster n plug and play hyundai elantra n wire tap method hyundai kona n plug and play hyundai i20 n coming soon hyundai i30 n coming soon hyundai i30 fastback n coming soon hyundai ioniq 5 n coming soon hyundai ioniq 6 n coming soon n line trims are not the same as full n vehicles if your car is an n line model confirm support before installing requirements kdmlink n-link interface kdmlink app on iphone or android supported hyundai n vehicle correct n-link install method for your vehicle install methods plug and play for supported vehicles where the n-link can connect directly at the obd-ii port wire tap for supported vehicles that require tapping the correct signal and power wires for a clean n-link connection next step after confirming your vehicle is supported continue to n-link hardware for install options",
       "headings": [
-        "Documents",
-        "Why use Documents?",
-        "Core Features",
-        "Using This Kit",
-        "Community Support"
+        "Compatible Vehicles",
+        "Supported N cars",
+        "Requirements",
+        "Install methods",
+        "Next step"
       ],
       "keywords": [
-        "introduction",
-        "guide",
-        "nextjs",
-        "documents",
-        "Documents",
-        "Why use Documents?",
-        "Core Features",
-        "Using This Kit",
-        "Community Support",
-        "Next.js",
-        "React",
-        "Tailwind CSS",
-        "TypeScript",
-        "Product Guides",
-        "Internal Docs",
-        "Technical Manuals",
-        "Write in Markdown/MDX",
-        "Flexible Navigation",
-        "Code Support",
-        "Search",
-        "Responsive Design",
-        "Math + Tables",
-        "SEO Defaults",
-        "AI Docs (Upcoming)"
+        "KDMLink",
+        "compatible vehicles",
+        "N-Link",
+        "Hyundai N",
+        "Veloster N",
+        "Elantra N",
+        "Kona N",
+        "i20 N",
+        "i30 N",
+        "IONIQ 5 N",
+        "IONIQ 6 N",
+        "Compatible Vehicles",
+        "Supported N cars",
+        "Requirements",
+        "Install methods",
+        "Next step",
+        "Plug and play",
+        "Wire tap"
       ]
     }
   },
   {
-    "slug": "/basic-setup/installation",
-    "title": "Installation",
-    "description": "This guide covers the installation of Documents and how to edit your new project.",
-    "content": "To install and edit the Documents, you need to have several prerequisites in place. Here's a list of all the essential pre-requisites\nfor setting up and working on this project.\n\n[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frubixvi%2Frubix-documents\\&project-name=my-documents\\&repository-name=my-documents\\&demo-title=Documents\\&demo-description=This%20Document%20Starter%20Kit%20is%20developed%20with%20Next.js%2C%20Tailwind%20CSS%20and%20TypeScript.%20It%20serves%20as%20a%20flexible%20and%20scalable%20foundation%20for%20building%20documentation%20websites%20or%20content-driven%20projects.\\&demo-url=https%3A%2F%2Frubix-documents.vercel.app%2F\\&demo-image=https%3A%2F%2Fgithub.com%2Frubixvi%2Frubix-documents%2Fblob%2Fmain%2Fpublic%2Fscreens%2Fscreen-1.png)\n\n## Prerequisites\n\n## Installation\n\n## Optional\n\n## Important Information\n\nThe project's search functionality relies on the Husky's automation to build `search-data/documents.json` ensure git commit is performed to generate this file.\n",
+    "slug": "/installation/app",
+    "title": "App Install & Setup",
+    "description": "Download the KDMLink app, pair it with your N-Link, and configure it.",
+    "content": "## App Install & Setup\n\nThis page covers downloading the KDMLink app, pairing it with your **N-Link**, and getting\nthrough first-run configuration. Make sure the [N-Link hardware](/docs/installation/n-link)\nis already installed and powered on before you start.\n\n## Download the app\n\n* **iOS** — [Download on the App Store](https://apps.apple.com/us/app/kdmlink/id6758346077)\n* **Android** — Post your email to @KDMLink on Instagram for early access.\n\n## Pair your N-Link\n\n## First-run configuration\n\n*To be transcribed — account setup, vehicle profile, units, telemetry preferences, etc.*\n\n## Updating the app\n\n*To be transcribed — how updates are delivered, when to update, firmware sync with N-Link.*\n\n## Troubleshooting\n\n*To be transcribed — N-Link not appearing, pair fails, drops out mid-session, permissions issues.*\n\n## Next step\n\nYou're set up. Head to [The App](/docs/app) for an overview of what KDMLink can do.\n",
     "_searchMeta": {
-      "cleanContent": "to install and edit the documents you need to have several prerequisites in place here s a list of all the essential pre-requisites for setting up and working on this project deploy with vercel https: vercel com new clone repository-url https 3a 2f 2fgithub com 2frubixvi 2frubix-documents project-name my-documents repository-name my-documents demo-title documents demo-description this 20document 20starter 20kit 20is 20developed 20with 20next js 2c 20tailwind 20css 20and 20typescript 20it 20serves 20as 20a 20flexible 20and 20scalable 20foundation 20for 20building 20documentation 20websites 20or 20content-driven 20projects demo-url https 3a 2f 2frubix-documents vercel app 2f demo-image https 3a 2f 2fgithub com 2frubixvi 2frubix-documents 2fblob 2fmain 2fpublic 2fscreens 2fscreen-1 png prerequisites installation optional important information the project s search functionality relies on the husky s automation to build search-data documents json ensure git commit is performed to generate this file",
+      "cleanContent": "app install setup this page covers downloading the kdmlink app pairing it with your n-link and getting through first-run configuration make sure the n-link hardware is already installed and powered on before you start download the app ios download on the app store android post your email to kdmlink on instagram for early access pair your n-link first-run configuration to be transcribed account setup vehicle profile units telemetry preferences etc updating the app to be transcribed how updates are delivered when to update firmware sync with n-link troubleshooting to be transcribed n-link not appearing pair fails drops out mid-session permissions issues next step you re set up head to the app for an overview of what kdmlink can do",
       "headings": [
-        "Prerequisites",
-        "Installation",
-        "Optional",
-        "Important Information"
+        "App Install & Setup",
+        "Download the app",
+        "Pair your N-Link",
+        "First-run configuration",
+        "Updating the app",
+        "Troubleshooting",
+        "Next step"
       ],
       "keywords": [
-        "installation",
-        "github",
-        "node",
-        "guide",
-        "nextjs",
-        "documents",
-        "Prerequisites",
-        "Installation",
-        "Optional",
-        "Important Information",
-        "search-data/documents.json"
-      ]
-    }
-  },
-  {
-    "slug": "/basic-setup/setup",
-    "title": "Setup",
-    "description": "Setting up and configuring your documentation project",
-    "content": "Setting up your new documentation project is straightforward. Most of the essential project settings can be configured within the `settings` folder.\n\n## Settings\n\nThis section provides the core settings for your documentation site, such as defining the site's URL, site icon and title.\n\n```tsx showLineNumbers\nexport const url = \"\"                 // The URL for your documentation site\nexport const siteicon = \"\"            // Icon displayed next to the site name in the header\nexport const sitename = \"\"            // Title of your documentation site\n```\n\n## Google Tags\n\nThis section allows you to integrate Google Tag Manager into your documentation project. You can add your GTM code and configure whether it's connected.\n\n```tsx showLineNumbers\nexport const gtm = \"\"                 // Add your Google Tag Manager code here\nexport const gtmconnected = true      // Set to true if GTM is connected, otherwise set to false\n```\n\n## Search Engine\n\nConfigure essential SEO settings to ensure your documentation site is optimized for search engines. This includes meta descriptions, keywords and social media sharing details like images and alt text.\n\n```tsx showLineNumbers\nexport const description = \"\"         // Description of your documentation site for SEO\nexport const keywords = [\"\", \"\"]      // List of SEO keywords for your documentation site\nexport const urlimage = \"\"            // The URL of the image used when sharing on social media)\nexport const imagealt = \"\"            // Alt text for shared images, helpful for screen readers\nexport const twitterhandle = \"\"       // Your company’s Twitter handle for social sharing\n```\n\n## Footer Branding\n\nThe footer settings allow you to customize the company information displayed at the bottom of the site. You can add the company name and the URL that the name will link to.\n\n```tsx showLineNumbers\nexport const companyname = \"\"         // The company name displayed in the copyright section\nexport const companylink = \"\"         // The URL your company name should link to\n```\n\n## General Layout\n\nThe layout settings control the appearance and functionality of various elements of the documentation site, such as branding, the right sidebar, feedback options, table of contents, and scroll-to-top functionality.\n\n```tsx showLineNumbers\nexport const branding = true          // Set to true to display our branding elements\nexport const rightsidebar = true      // Set to true to enable the right sidebar with feedback, table of contents and scroll-to-top\nexport const feedbackedit = true      // Control to enable/disable feedback on GitHub\nexport const tableofcontent = true    // Control to enable/disable the generated table of contents\nexport const totopscroll = true       // Control to enable/disable scroll-to-top button\n```\n\n## Github Control\n\nIf your MDX files are hosted on GitHub, you can configure the project to load documents directly from there. This option can be useful for syncing documentation updates directly with your repository.\n\n```tsx showLineNumbers\nexport const loadfromgithub = false   // Set to true to load your MDX documents directly from GitHub\n```\n\n## Project Structure\n",
-    "_searchMeta": {
-      "cleanContent": "setting up your new documentation project is straightforward most of the essential project settings can be configured within the settings folder settings this section provides the core settings for your documentation site such as defining the site s url site icon and title google tags this section allows you to integrate google tag manager into your documentation project you can add your gtm code and configure whether it s connected search engine configure essential seo settings to ensure your documentation site is optimized for search engines this includes meta descriptions keywords and social media sharing details like images and alt text footer branding the footer settings allow you to customize the company information displayed at the bottom of the site you can add the company name and the url that the name will link to general layout the layout settings control the appearance and functionality of various elements of the documentation site such as branding the right sidebar feedback options table of contents and scroll-to-top functionality github control if your mdx files are hosted on github you can configure the project to load documents directly from there this option can be useful for syncing documentation updates directly with your repository project structure",
-      "headings": [
-        "Settings",
-        "Google Tags",
-        "Search Engine",
-        "Footer Branding",
-        "General Layout",
-        "Github Control",
-        "Project Structure"
-      ],
-      "keywords": [
+        "KDMLink",
+        "app",
+        "install",
         "setup",
-        "configuration",
-        "layout",
-        "Google",
-        "SEO",
-        "nextjs",
-        "documents",
-        "Settings",
-        "Google Tags",
-        "Search Engine",
-        "Footer Branding",
-        "General Layout",
-        "Github Control",
-        "Project Structure",
-        "settings",
-        "tsx showLineNumbers\nexport const url = \"\"                 // The URL for your documentation site\nexport const siteicon = \"\"            // Icon displayed next to the site name in the header\nexport const sitename = \"\"            // Title of your documentation site",
-        "## Google Tags\n\nThis section allows you to integrate Google Tag Manager into your documentation project. You can add your GTM code and configure whether it's connected.",
-        "tsx showLineNumbers\nexport const gtm = \"\"                 // Add your Google Tag Manager code here\nexport const gtmconnected = true      // Set to true if GTM is connected, otherwise set to false",
-        "## Search Engine\n\nConfigure essential SEO settings to ensure your documentation site is optimized for search engines. This includes meta descriptions, keywords and social media sharing details like images and alt text.",
-        "tsx showLineNumbers\nexport const description = \"\"         // Description of your documentation site for SEO\nexport const keywords = [\"\", \"\"]      // List of SEO keywords for your documentation site\nexport const urlimage = \"\"            // The URL of the image used when sharing on social media)\nexport const imagealt = \"\"            // Alt text for shared images, helpful for screen readers\nexport const twitterhandle = \"\"       // Your company’s Twitter handle for social sharing",
-        "## Footer Branding\n\nThe footer settings allow you to customize the company information displayed at the bottom of the site. You can add the company name and the URL that the name will link to.",
-        "tsx showLineNumbers\nexport const companyname = \"\"         // The company name displayed in the copyright section\nexport const companylink = \"\"         // The URL your company name should link to",
-        "## General Layout\n\nThe layout settings control the appearance and functionality of various elements of the documentation site, such as branding, the right sidebar, feedback options, table of contents, and scroll-to-top functionality.",
-        "tsx showLineNumbers\nexport const branding = true          // Set to true to display our branding elements\nexport const rightsidebar = true      // Set to true to enable the right sidebar with feedback, table of contents and scroll-to-top\nexport const feedbackedit = true      // Control to enable/disable feedback on GitHub\nexport const tableofcontent = true    // Control to enable/disable the generated table of contents\nexport const totopscroll = true       // Control to enable/disable scroll-to-top button",
-        "## Github Control\n\nIf your MDX files are hosted on GitHub, you can configure the project to load documents directly from there. This option can be useful for syncing documentation updates directly with your repository.",
-        "tsx showLineNumbers\nexport const loadfromgithub = false   // Set to true to load your MDX documents directly from GitHub"
+        "pairing",
+        "iOS",
+        "Android",
+        "Bluetooth",
+        "App Install & Setup",
+        "Download the app",
+        "Pair your N-Link",
+        "First-run configuration",
+        "Updating the app",
+        "Troubleshooting",
+        "Next step",
+        "N-Link"
       ]
     }
   },
   {
-    "slug": "/markdown/cards",
-    "title": "Cards",
-    "description": "Explore and implement various card styles, including small, large and image cards.",
-    "content": "This section introduces the different card styles available in the system, from compact small cards to visually rich image cards. Each example is paired with JSX code snippets, providing you with a practical guide to incorporate these components seamlessly into your project.\n\n## Small Card\n\n```jsx\n<CardGrid>\n  <Card\n    title=\"Instructions\"\n    href=\"/docs/basic-setup/installation\"\n    icon=\"alignJustify\"\n    variant=\"small\"\n    description=\"test description\"\n  />\n  <Card\n    title=\"Setup\"\n    href=\"/docs/basic-setup/setup\"\n    icon=\"alignJustify\"\n    variant=\"small\"\n  />\n  <Card\n    title=\"Rubix Studios\"\n    href=\"https://rubixstudios.com.au\"\n    icon=\"alignJustify\"\n    external={true}\n    variant=\"small\"\n  />\n</CardGrid>\n```\n\n## Large Card\n\n```jsx\n<CardGrid>\n  <Card\n    subtitle=\"Instructions\"\n    title=\"Installation\"\n    description=\"Get started with Documents using our quick start installation guide to get your project started.\"\n    href=\"/docs/basic-setup/installation\"\n  />\n  <Card\n    subtitle=\"Setup\"\n    title=\"Site Settings\"\n    description=\"Setting up your Documents projects layout, links and search engine optimisation.\"\n    href=\"/docs/basic-setup/setup\"\n  />\n  <Card\n    subtitle=\"Support\"\n    title=\"Rubix Studios\"\n    description=\"Australia's leading branding, marketing and web development company.\"\n    href=\"https://rubixstudios.com.au\"\n    external={true}\n  />\n</CardGrid>\n```\n\n## Image Card\n\n```jsx\n<CardGrid>\n  <Card\n    title=\"Instructions\"\n    href=\"/docs/introduction/installation\"\n    image=\"/images/og-image.png\"\n    variant=\"image\"\n  />\n  <Card\n    title=\"Setup\"\n    href=\"/docs/introduction/setup\"\n    image=\"/images/og-image.png\"\n    variant=\"image\"\n  />\n  <Card\n    title=\"Rubix Studios\"\n    href=\"https://www.rubixstudios.com.au\"\n    image=\"/images/og-image.png\"\n    external={true}\n    variant=\"image\"\n  />\n</CardGrid>\n```\n",
+    "slug": "/installation",
+    "title": "Installation",
+    "description": "Set up your N-Link hardware and install the KDMLink app.",
+    "content": "## Installation\n\nGetting set up with KDMLink has two parts: installing the **N-Link** hardware in your vehicle,\nand installing the **KDMLink app** on your phone.\n\n## Download the app\n\n* **iOS** — [Download on the App Store](https://apps.apple.com/us/app/kdmlink/id6758346077)\n* **Android** — Post your email to @KDMLink on Instagram for early access\n\n## What you'll need\n\n* A supported KDM vehicle\n* A KDMLink **N-Link** interface device\n\nOnce you've installed the hardware and the app, head to [App Install & Setup](/docs/installation/app)\nto pair your phone with the N-Link and verify the connection.\n",
     "_searchMeta": {
-      "cleanContent": "this section introduces the different card styles available in the system from compact small cards to visually rich image cards each example is paired with jsx code snippets providing you with a practical guide to incorporate these components seamlessly into your project small card large card image card",
+      "cleanContent": "installation getting set up with kdmlink has two parts: installing the n-link hardware in your vehicle and installing the kdmlink app on your phone download the app ios download on the app store android post your email to kdmlink on instagram for early access what you ll need a supported kdm vehicle a kdmlink n-link interface device once you ve installed the hardware and the app head to app install setup to pair your phone with the n-link and verify the connection",
       "headings": [
-        "Small Card",
-        "Large Card",
-        "Image Card"
+        "Installation",
+        "Download the app",
+        "What you'll need"
       ],
       "keywords": [
-        "Small Card",
-        "Large Card",
-        "Image Card",
-        "jsx\n<CardGrid>\n  <Card\n    title=\"Instructions\"\n    href=\"/docs/basic-setup/installation\"\n    icon=\"alignJustify\"\n    variant=\"small\"\n    description=\"test description\"\n  />\n  <Card\n    title=\"Setup\"\n    href=\"/docs/basic-setup/setup\"\n    icon=\"alignJustify\"\n    variant=\"small\"\n  />\n  <Card\n    title=\"Rubix Studios\"\n    href=\"https://rubixstudios.com.au\"\n    icon=\"alignJustify\"\n    external={true}\n    variant=\"small\"\n  />\n</CardGrid>",
-        "## Large Card",
-        "jsx\n<CardGrid>\n  <Card\n    subtitle=\"Instructions\"\n    title=\"Installation\"\n    description=\"Get started with Documents using our quick start installation guide to get your project started.\"\n    href=\"/docs/basic-setup/installation\"\n  />\n  <Card\n    subtitle=\"Setup\"\n    title=\"Site Settings\"\n    description=\"Setting up your Documents projects layout, links and search engine optimisation.\"\n    href=\"/docs/basic-setup/setup\"\n  />\n  <Card\n    subtitle=\"Support\"\n    title=\"Rubix Studios\"\n    description=\"Australia's leading branding, marketing and web development company.\"\n    href=\"https://rubixstudios.com.au\"\n    external={true}\n  />\n</CardGrid>",
-        "## Image Card",
-        "jsx\n<CardGrid>\n  <Card\n    title=\"Instructions\"\n    href=\"/docs/introduction/installation\"\n    image=\"/images/og-image.png\"\n    variant=\"image\"\n  />\n  <Card\n    title=\"Setup\"\n    href=\"/docs/introduction/setup\"\n    image=\"/images/og-image.png\"\n    variant=\"image\"\n  />\n  <Card\n    title=\"Rubix Studios\"\n    href=\"https://www.rubixstudios.com.au\"\n    image=\"/images/og-image.png\"\n    external={true}\n    variant=\"image\"\n  />\n</CardGrid>"
+        "KDMLink",
+        "N-Link",
+        "installation",
+        "setup",
+        "download",
+        "iOS",
+        "Android",
+        "Installation",
+        "Download the app",
+        "What you'll need",
+        "KDMLink app"
       ]
     }
   },
   {
-    "slug": "/markdown/diagrams",
-    "title": "Diagrams",
-    "description": "Add various diagram types, including flowcharts, decision trees and entity-relationship diagrams.",
-    "content": "Diagrams are powerful tools for visualizing processes, relationships, and decisions. This section showcases different types of diagrams created using **Mermaid**, complete with examples and reusable code snippets to integrate into your projects.\n\n## Flowchart\n\nA flowchart represents a sequence of steps or processes in a visual format. Use this diagram to map workflows, decision-making processes, or operational flows.\n\n```jsx\n<Mermaid chart=\"graph TD\nStart --> Task1\nTask1 --> Task2\nTask2 --> End\" />\n```\n\n## Decision Tree\n\nDecision trees illustrate choices and possible outcomes, making them ideal for decision-making workflows or processes involving multiple paths.\n\n```jsx\n<Mermaid chart=\"graph TD\n  A[Start] --> B{Is it raining?}\n  B -->|Yes| C[Take an umbrella]\n  B -->|No| D[Enjoy the weather]\n  C --> E[Go outside]\n  D --> E\" \n/>\n```\n\n## Entity-Relationship Diagram\n\nEntity-relationship diagrams (ERDs) are used to model relationships between entities in a system. They are widely used in database design and system architecture planning.\n\n```jsx\n<Mermaid chart=\"erDiagram\n  CUSTOMER ||--o{ ORDER : places\n  ORDER ||--|{ LINE-ITEM : contains\n  PRODUCT ||--o{ LINE-ITEM : included in\n  CUSTOMER {\n    string name\n    string email\n  }\n  ORDER {\n    int orderNumber\n    date orderDate\n  }\n  LINE-ITEM {\n    int quantity\n    float price\n  }\n  PRODUCT {\n    int productId\n    string name\n    float price\n  }\" \n/>\n```\n\nEach of these diagrams serves a specific purpose and Mermaid makes it easy to generate them dynamically. Feel free to experiment with the provided code snippets and adapt them to your needs.\n",
+    "slug": "/installation/n-link",
+    "title": "N-Link Hardware",
+    "description": "How to install the KDMLink N-Link interface in your vehicle.",
+    "content": "## N-Link Hardware Install\n\nThe **N-Link** is the hardware interface that connects KDMLink to your vehicle for logging.\nChoose the install method that matches your vehicle:\n\nCheck [Compatible Vehicles](/docs/compatible-vehicles) before choosing an install method. Once\nthe N-Link is installed and powered, head over to [App Install & Setup](/docs/installation/app)\nto pair it with your phone.\n\n## What's in the box\n\n* N-Link module\n* CAN bus harness (for plug-and-play installs) or wire-tap harness (for wire-tap installs)\n* Power harness with inline fuse\n* KDMLink sticker\n\n## Before you start\n\nPark the vehicle safely, turn it off, and confirm that your phone and vehicle are compatible.\nFor wire-tap installs, verify the exact wire locations for your vehicle before making any\nconnections. Required tools:\n\n* Phillips screwdriver\n* Pliers or fuse puller (for power harness fuse)\n* Zip ties or double-sided tape to secure the N-Link and harnesses\n\n## Compatibility\n\nFor vehicle, phone, and install-method requirements, see\n[Compatible Vehicles](/docs/compatible-vehicles).\n\n## Troubleshooting\n\n* **No power** — confirm the connector or wire-tap power connection is fully seated.\n* **N-Link does not appear in the app** — confirm the N-Link is powered, then continue to\n  [App Install & Setup](/docs/installation/app).\n* **Vehicle data not appearing in the app** — confirm the N-Link is properly connected to the\n\nOnce the N-Link is installed and powered, continue to\n[App Install & Setup](/docs/installation/app) to pair it with the KDMLink app.\n",
     "_searchMeta": {
-      "cleanContent": "diagrams are powerful tools for visualizing processes relationships and decisions this section showcases different types of diagrams created using mermaid complete with examples and reusable code snippets to integrate into your projects flowchart a flowchart represents a sequence of steps or processes in a visual format use this diagram to map workflows decision-making processes or operational flows decision tree decision trees illustrate choices and possible outcomes making them ideal for decision-making workflows or processes involving multiple paths entity-relationship diagram entity-relationship diagrams erds are used to model relationships between entities in a system they are widely used in database design and system architecture planning each of these diagrams serves a specific purpose and mermaid makes it easy to generate them dynamically feel free to experiment with the provided code snippets and adapt them to your needs",
+      "cleanContent": "n-link hardware install the n-link is the hardware interface that connects kdmlink to your vehicle for logging choose the install method that matches your vehicle: check compatible vehicles before choosing an install method once the n-link is installed and powered head over to app install setup to pair it with your phone what s in the box n-link module can bus harness for plug-and-play installs or wire-tap harness for wire-tap installs power harness with inline fuse kdmlink sticker before you start park the vehicle safely turn it off and confirm that your phone and vehicle are compatible for wire-tap installs verify the exact wire locations for your vehicle before making any connections required tools: phillips screwdriver pliers or fuse puller for power harness fuse zip ties or double-sided tape to secure the n-link and harnesses compatibility for vehicle phone and install-method requirements see compatible vehicles troubleshooting no power confirm the connector or wire-tap power connection is fully seated n-link does not appear in the app confirm the n-link is powered then continue to app install setup vehicle data not appearing in the app confirm the n-link is properly connected to the once the n-link is installed and powered continue to app install setup to pair it with the kdmlink app",
       "headings": [
-        "Flowchart",
-        "Decision Tree",
-        "Entity-Relationship Diagram"
+        "N-Link Hardware Install",
+        "What's in the box",
+        "Before you start",
+        "Compatibility",
+        "Troubleshooting"
       ],
       "keywords": [
-        "Flowchart",
-        "Decision Tree",
-        "Entity-Relationship Diagram",
-        "Mermaid",
-        "jsx\n<Mermaid chart=\"graph TD\nStart --> Task1\nTask1 --> Task2\nTask2 --> End\" />",
-        "## Decision Tree\n\nDecision trees illustrate choices and possible outcomes, making them ideal for decision-making workflows or processes involving multiple paths.",
-        "jsx\n<Mermaid chart=\"graph TD\n  A[Start] --> B{Is it raining?}\n  B -->|Yes| C[Take an umbrella]\n  B -->|No| D[Enjoy the weather]\n  C --> E[Go outside]\n  D --> E\" \n/>",
-        "## Entity-Relationship Diagram\n\nEntity-relationship diagrams (ERDs) are used to model relationships between entities in a system. They are widely used in database design and system architecture planning.",
-        "jsx\n<Mermaid chart=\"erDiagram\n  CUSTOMER ||--o{ ORDER : places\n  ORDER ||--|{ LINE-ITEM : contains\n  PRODUCT ||--o{ LINE-ITEM : included in\n  CUSTOMER {\n    string name\n    string email\n  }\n  ORDER {\n    int orderNumber\n    date orderDate\n  }\n  LINE-ITEM {\n    int quantity\n    float price\n  }\n  PRODUCT {\n    int productId\n    string name\n    float price\n  }\" \n/>"
+        "KDMLink",
+        "N-Link",
+        "hardware",
+        "install",
+        "OBD-II",
+        "vehicle",
+        "N-Link Hardware Install",
+        "What's in the box",
+        "Before you start",
+        "Compatibility",
+        "Troubleshooting",
+        "No power",
+        "N-Link does not appear in the app",
+        "Vehicle data not appearing in the app"
       ]
     }
   },
   {
-    "slug": "/markdown/filetree",
-    "title": "Filetree",
-    "description": "This section provides an overview of file structures and their implementation using the FileTree component.",
-    "content": "This section demonstrates the structure of a file tree using the `FileTree` component. Below is an example showcasing folders and files organized hierarchically for a project setup.\n\n## How to Use\n\nIntegrate the `FileTree` component into your project to visually represent file and folder structures. This is particularly useful for documentation, tutorials, or providing users with an overview of your project's architecture.\n\n### JSX Code Example\n\nHere is how you can define the file tree structure in for use in your project:\n\n```jsx\n<FileTree>\n  <Folder name=\"src\" label=\"Source Code\">\n    <File name=\"index.tsx\" label=\"Index File\" />\n    <Folder name=\"components\" label=\"Components\">\n      <File name=\"button.tsx\" label=\"Button Component\" />\n      <File name=\"input.tsx\" label=\"Input Component\" />\n    </Folder>\n    <Folder name=\"pages\" label=\"Pages\">\n      <File name=\"home.tsx\" label=\"Home Page\" />\n      <File name=\"about.tsx\" label=\"About Page\" />\n    </Folder>\n  </Folder>\n</FileTree>\n```\n\nUse this code as a template to set up your own file tree structure and customize it as needed.\n",
+    "slug": "/installation/n-link/plug-and-play",
+    "title": "Plug and Play Install",
+    "description": "Install the N-Link with a direct OBD-II plug-and-play connection.",
+    "content": "## Plug and Play Install\n\nUse this method when your vehicle supports a direct **N-Link** connection using the CAN bus harness.\nCurrent plug-and-play vehicles are listed on [Compatible Vehicles](/docs/compatible-vehicles).\n\n## Next step\n\nContinue to [App Install & Setup](/docs/installation/app) to pair the N-Link with KDMLink.\n",
     "_searchMeta": {
-      "cleanContent": "this section demonstrates the structure of a file tree using the filetree component below is an example showcasing folders and files organized hierarchically for a project setup how to use integrate the filetree component into your project to visually represent file and folder structures this is particularly useful for documentation tutorials or providing users with an overview of your project s architecture jsx code example here is how you can define the file tree structure in for use in your project: use this code as a template to set up your own file tree structure and customize it as needed",
+      "cleanContent": "plug and play install use this method when your vehicle supports a direct n-link connection using the can bus harness current plug-and-play vehicles are listed on compatible vehicles next step continue to app install setup to pair the n-link with kdmlink",
       "headings": [
-        "How to Use"
+        "Plug and Play Install",
+        "Next step"
       ],
       "keywords": [
-        "How to Use",
-        "FileTree",
-        "jsx\n<FileTree>\n  <Folder name=\"src\" label=\"Source Code\">\n    <File name=\"index.tsx\" label=\"Index File\" />\n    <Folder name=\"components\" label=\"Components\">\n      <File name=\"button.tsx\" label=\"Button Component\" />\n      <File name=\"input.tsx\" label=\"Input Component\" />\n    </Folder>\n    <Folder name=\"pages\" label=\"Pages\">\n      <File name=\"home.tsx\" label=\"Home Page\" />\n      <File name=\"about.tsx\" label=\"About Page\" />\n    </Folder>\n  </Folder>\n</FileTree>"
+        "KDMLink",
+        "N-Link",
+        "plug and play",
+        "OBD-II",
+        "Veloster N",
+        "Kona N",
+        "Plug and Play Install",
+        "Next step"
       ]
     }
   },
   {
-    "slug": "/markdown",
+    "slug": "/installation/n-link/wire-tap",
+    "title": "Wire Tap Install",
+    "description": "Install the N-Link with the wire-tap connection method.",
+    "content": "## Wire Tap Install\n\nUse this method only when your vehicle requires a wire-tap **N-Link** connection. Current\nwire-tap vehicles are listed on [Compatible Vehicles](/docs/compatible-vehicles).\n\n## Next step\n\nContinue to [App Install & Setup](/docs/installation/app) to pair the N-Link with KDMLink.\n",
+    "_searchMeta": {
+      "cleanContent": "wire tap install use this method only when your vehicle requires a wire-tap n-link connection current wire-tap vehicles are listed on compatible vehicles next step continue to app install setup to pair the n-link with kdmlink",
+      "headings": [
+        "Wire Tap Install",
+        "Next step"
+      ],
+      "keywords": [
+        "KDMLink",
+        "N-Link",
+        "wire tap",
+        "Elantra N",
+        "vehicle wiring",
+        "Wire Tap Install",
+        "Next step"
+      ]
+    }
+  },
+  {
+    "slug": "/introduction",
     "title": "Introduction",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n* \\[x] Write the press release\n* \\[ ] Update the website\n* \\[ ] Contact the media\n\n| Syntax        | Description |   Test Text |\n| :------------ | :---------: | ----------: |\n| Header        |    Title    | Here's this |\n| Paragraph     |    Text     |    And more |\n| Strikethrough |             |    ~~Text~~ |\n\n## Sample Document with Mermaid\n\nHere is a Mermaid diagram:\n\nThis diagram should render automatically without any extra imports.\n\n## Getting Started\n\nTo begin using the Documentation Template, follow these simple steps:\n\n* Start by cloning the repository to your local machine.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium. Optio, necessitatibus sequi. Veritatis, aspernatur? Possimus quis repellat eum vitae eveniet.\n\n## Blockquotes\n\nBlockquotes are useful for emphasizing key points or quoting external sources:\n\n> \"Documentation is a love letter that you write to your future self.\" - Damian Conway\n\nFeel free to use blockquotes to highlight important information or quotes relevant to your documentation.\n\n## Code Examples with switch\n\nHere a custom tab component from shadcn ui is used.\n\n## Conclusion\n\nThank you for choosing the Documentation Template for your project. Whether you're documenting software, APIs, or processes, we're here to support you in creating clear and effective documentation. Happy documenting!\n",
+    "description": "What KDMLink is and what you can do with it.",
+    "content": "## What is KDMLink?\n\n**KDMLink** is a mobile data logging and RaceChrono integration app for Korean cars\n(Hyundai, Kia, and Genesis). It pairs with the **N-Link** interface to read live data\nfrom your vehicle, record sessions, and send the data where you need it from your phone.\n\n## Who it's for\n\nKDMLink is built for owners and track drivers of Korean performance cars who want clean,\nphone-based logging and RaceChrono workflows.\n\n## What you'll need\n\n* A supported KDM vehicle\n* A KDMLink **N-Link** interface device\n* The KDMLink app installed on your iPhone (Android coming soon)\n\nCheck [Compatible Vehicles](/docs/compatible-vehicles), then head to\n[Installation](/docs/installation) to set everything up.\n",
     "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam x write the press release update the website contact the media syntax description test text:------------ :---------: ----------:header title here s thisparagraph text and morestrikethrough text sample document with mermaid here is a mermaid diagram: this diagram should render automatically without any extra imports getting started to begin using the documentation template follow these simple steps: start by cloning the repository to your local machine lorem ipsum dolor sit amet consectetur adipisicing elit reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium optio necessitatibus sequi veritatis aspernatur possimus quis repellat eum vitae eveniet blockquotes blockquotes are useful for emphasizing key points or quoting external sources: documentation is a love letter that you write to your future self - damian conway feel free to use blockquotes to highlight important information or quotes relevant to your documentation code examples with switch here a custom tab component from shadcn ui is used conclusion thank you for choosing the documentation template for your project whether you re documenting software apis or processes we re here to support you in creating clear and effective documentation happy documenting",
+      "cleanContent": "what is kdmlink kdmlink is a mobile data logging and racechrono integration app for korean cars hyundai kia and genesis it pairs with the n-link interface to read live data from your vehicle record sessions and send the data where you need it from your phone who it s for kdmlink is built for owners and track drivers of korean performance cars who want clean phone-based logging and racechrono workflows what you ll need a supported kdm vehicle a kdmlink n-link interface device the kdmlink app installed on your iphone android coming soon check compatible vehicles then head to installation to set everything up",
       "headings": [
-        "Sample Document with Mermaid",
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion"
+        "What is KDMLink?",
+        "Who it's for",
+        "What you'll need"
       ],
       "keywords": [
-        "Sample Document with Mermaid",
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion"
-      ]
-    }
-  },
-  {
-    "slug": "/markdown/lists",
-    "title": "Lists",
-    "description": "This section provides an overview of creating and using lists in the Documents boilerplate.",
-    "content": "Learn how to create and render different types of lists in the Documents boilerplate. Examples include checklists, ordered lists, unordered lists and nested lists.\n\n## Checklist\n\n* \\[x] Write the press release\n* \\[ ] Update the website\n* \\[ ] Contact the media\n\n```jsx\n- [x] Write the press release\n- [ ] Update the website\n- [ ] Contact the media\n```\n\n## Simple List\n\n* Item 1\n* Item 2\n* Item 3\n\n```jsx\n- Item 1\n- Item 2\n- Item 3\n```\n\n## Number List\n\n1. Research\n2. Draft the content\n3. Review and edit\n4. Publish\n\n```jsx\n1. Research\n2. Draft the content\n3. Review and edit\n4. Publish\n```\n\n## Nested List\n\n* Main Category 1\n  * Sub Item 1.1\n  * Sub Item 1.2\n* Main Category 2\n  * Sub Item 2.1\n  * Sub Item 2.2\n\n```jsx\n- Main Category 1\n  - Sub Item 1.1\n  - Sub Item 1.2\n- Main Category 2\n  - Sub Item 2.1\n  - Sub Item 2.2\n```\n\nUse these examples as a foundation to create and customize lists that fit your project's needs.\n",
-    "_searchMeta": {
-      "cleanContent": "learn how to create and render different types of lists in the documents boilerplate examples include checklists ordered lists unordered lists and nested lists checklist x write the press release update the website contact the media simple list item 1 item 2 item 3 number list research draft the content review and edit publish nested list main category 1 sub item 1 1 sub item 1 2 main category 2 sub item 2 1 sub item 2 2 use these examples as a foundation to create and customize lists that fit your project s needs",
-      "headings": [
-        "Checklist",
-        "Simple List",
-        "Number List",
-        "Nested List"
-      ],
-      "keywords": [
-        "Checklist",
-        "Simple List",
-        "Number List",
-        "Nested List",
-        "jsx\n- [x] Write the press release\n- [ ] Update the website\n- [ ] Contact the media",
-        "## Simple List\n\n* Item 1\n* Item 2\n* Item 3",
-        "jsx\n- Item 1\n- Item 2\n- Item 3",
-        "## Number List\n\n1. Research\n2. Draft the content\n3. Review and edit\n4. Publish",
-        "jsx\n1. Research\n2. Draft the content\n3. Review and edit\n4. Publish",
-        "## Nested List\n\n* Main Category 1\n  * Sub Item 1.1\n  * Sub Item 1.2\n* Main Category 2\n  * Sub Item 2.1\n  * Sub Item 2.2",
-        "jsx\n- Main Category 1\n  - Sub Item 1.1\n  - Sub Item 1.2\n- Main Category 2\n  - Sub Item 2.1\n  - Sub Item 2.2"
-      ]
-    }
-  },
-  {
-    "slug": "/markdown/maths",
-    "title": "Maths",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n## Basic Algebra\n\nThe area of a circle ($$A$$) can be calculated using the radius ($$r$$) as follows:\n\n```math\nA = \\pi r^2\n```\n\n## Quadratic Formula\n\nThe quadratic formula for solving an equation of the form $$ax^2 + bx + c = 0$$ is:\n\n```math\nx = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n```\n\n## Newton's Second Law of Motion\n\nNewton's second law of motion states that force ($$F$$) is the product of mass ($$m$$) and acceleration ($$a$$):\n\n```math\nF = ma\n```\n\n## Pythagorean Theorem\n\nThe Pythagorean theorem relates the lengths of the sides of a right triangle:\n\n```math\na^2 + b^2 = c^2\n```\n\n## Einstein's Mass-Energy Equivalence\n\nEinstein's famous equation relates energy ($$E$$), mass ($$m$$), and the speed of light ($$c$$):\n\n```math\nE = mc^2\n```\n",
-    "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam basic algebra the area of a circle a can be calculated using the radius r as follows: quadratic formula the quadratic formula for solving an equation of the form ax 2 bx c 0 is: newton s second law of motion newton s second law of motion states that force f is the product of mass m and acceleration a : pythagorean theorem the pythagorean theorem relates the lengths of the sides of a right triangle: einstein s mass-energy equivalence einstein s famous equation relates energy e mass m and the speed of light c :",
-      "headings": [
-        "Basic Algebra",
-        "Quadratic Formula",
-        "Newton's Second Law of Motion",
-        "Pythagorean Theorem",
-        "Einstein's Mass-Energy Equivalence"
-      ],
-      "keywords": [
-        "Basic Algebra",
-        "Quadratic Formula",
-        "Newton's Second Law of Motion",
-        "Pythagorean Theorem",
-        "Einstein's Mass-Energy Equivalence",
-        "math\nA = \\pi r^2",
-        "## Quadratic Formula\n\nThe quadratic formula for solving an equation of the form $$ax^2 + bx + c = 0$$ is:",
-        "math\nx = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}",
-        "## Newton's Second Law of Motion\n\nNewton's second law of motion states that force ($$F$$) is the product of mass ($$m$$) and acceleration ($$a$$):",
-        "math\nF = ma",
-        "## Pythagorean Theorem\n\nThe Pythagorean theorem relates the lengths of the sides of a right triangle:",
-        "math\na^2 + b^2 = c^2",
-        "## Einstein's Mass-Energy Equivalence\n\nEinstein's famous equation relates energy ($$E$$), mass ($$m$$), and the speed of light ($$c$$):",
-        "math\nE = mc^2"
-      ]
-    }
-  },
-  {
-    "slug": "/markdown/notes",
-    "title": "Notes",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n## Standard Note\n\n## Success Note\n\n## Warning Note\n\n## Danger Note\n",
-    "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam standard note success note warning note danger note",
-      "headings": [
-        "Standard Note",
-        "Success Note",
-        "Warning Note",
-        "Danger Note"
-      ],
-      "keywords": [
-        "Standard Note",
-        "Success Note",
-        "Warning Note",
-        "Danger Note"
-      ]
-    }
-  },
-  {
-    "slug": "/markdown/steps",
-    "title": "Steps",
-    "description": "This section provides an overview of Introduction.",
-    "content": "The `<Step>` and `<StepItem>` components allow you to create structured step-by-step guides in your documentation. These components are particularly useful when you want to break down a process or tutorial into easy-to-follow stages.\n\n## Steps\n\nTo create a step-by-step guide in your MDX, you can use the following structure:\n",
-    "_searchMeta": {
-      "cleanContent": "the step and stepitem components allow you to create structured step-by-step guides in your documentation these components are particularly useful when you want to break down a process or tutorial into easy-to-follow stages steps to create a step-by-step guide in your mdx you can use the following structure:",
-      "headings": [
-        "Steps"
-      ],
-      "keywords": [
-        "Steps",
-        "<Step>",
-        "<StepItem>"
-      ]
-    }
-  },
-  {
-    "slug": "/markdown/table",
-    "title": "Table",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n| Syntax        | Description |   Test Text |\n| :------------ | :---------: | ----------: |\n| Header        |    Title    | Here's this |\n| Paragraph     |    Text     |    And more |\n| Strikethrough |             |    ~~Text~~ |\n\n| Feature       | Documentation Link |                    Notes |\n| :------------ | :----------------: | -----------------------: |\n| **Feature A** |     [Docs](#)      | For more info click here |\n| **Feature B** |     [Guide](#)     |  See the full guide here |\n| **Feature C** |     [Setup](#)     |       Setup instructions |\n",
-    "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam syntax description test text:------------ :---------: ----------:header title here s thisparagraph text and morestrikethrough text feature documentation link notes:------------ :----------------: -----------------------:feature a docs for more info click herefeature b guide see the full guide herefeature c setup setup instructions",
-      "headings": [],
-      "keywords": [
-        "Feature A",
-        "Feature B",
-        "Feature C"
-      ]
-    }
-  },
-  {
-    "slug": "/markdown/tabs",
-    "title": "Tabs",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n## Code Examples with switch\n\nHere a custom tab component from shadcn ui is used.\n",
-    "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam code examples with switch here a custom tab component from shadcn ui is used",
-      "headings": [
-        "Code Examples with switch"
-      ],
-      "keywords": [
-        "Code Examples with switch"
-      ]
-    }
-  },
-  {
-    "slug": "/navigation",
-    "title": "Navigation",
-    "description": "How to build our your documents menu and navigations.",
-    "content": "",
-    "_searchMeta": {
-      "cleanContent": "",
-      "headings": [],
-      "keywords": [
-        "navigation",
-        "sidebar",
-        "menus",
-        "mdx",
-        "nextjs",
-        "documents"
-      ]
-    }
-  },
-  {
-    "slug": "/random",
-    "title": "Introduction",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n* \\[x] Write the press release\n* \\[ ] Update the website\n* \\[ ] Contact the media\n\n| Syntax        | Description |   Test Text |\n| :------------ | :---------: | ----------: |\n| Header        |    Title    | Here's this |\n| Paragraph     |    Text     |    And more |\n| Strikethrough |             |    ~~Text~~ |\n\n## Getting Started\n\nTo begin using the Documentation Template, follow these simple steps:\n\n* Start by cloning the repository to your local machine.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium. Optio, necessitatibus sequi. Veritatis, aspernatur? Possimus quis repellat eum vitae eveniet.\n\n## Blockquotes\n\nBlockquotes are useful for emphasizing key points or quoting external sources:\n\n> \"Documentation is a love letter that you write to your future self.\" - Damian Conway\n\nFeel free to use blockquotes to highlight important information or quotes relevant to your documentation.\n\n## Code Examples with switch\n\nHere a custom tab component from shadcn ui is used.\n\n## Conclusion\n\nAdding some random stuff to change the code\n",
-    "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam x write the press release update the website contact the media syntax description test text:------------ :---------: ----------:header title here s thisparagraph text and morestrikethrough text getting started to begin using the documentation template follow these simple steps: start by cloning the repository to your local machine lorem ipsum dolor sit amet consectetur adipisicing elit reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium optio necessitatibus sequi veritatis aspernatur possimus quis repellat eum vitae eveniet blockquotes blockquotes are useful for emphasizing key points or quoting external sources: documentation is a love letter that you write to your future self - damian conway feel free to use blockquotes to highlight important information or quotes relevant to your documentation code examples with switch here a custom tab component from shadcn ui is used conclusion adding some random stuff to change the code",
-      "headings": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion"
-      ],
-      "keywords": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion"
-      ]
-    }
-  },
-  {
-    "slug": "/structure/deep/deeper/even-deeper",
-    "title": "Introduction",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n* \\[x] Write the press release\n* \\[ ] Update the website\n* \\[ ] Contact the media\n\n| Syntax        | Description |   Test Text |\n| :------------ | :---------: | ----------: |\n| Header        |    Title    | Here's this |\n| Paragraph     |    Text     |    And more |\n| Strikethrough |             |    ~~Text~~ |\n",
-    "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam x write the press release update the website contact the media syntax description test text:------------ :---------: ----------:header title here s thisparagraph text and morestrikethrough text",
-      "headings": [],
-      "keywords": []
-    }
-  },
-  {
-    "slug": "/structure/deep/deeper",
-    "title": "Introduction",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n* \\[x] Write the press release\n* \\[ ] Update the website\n* \\[ ] Contact the media\n\n| Syntax        | Description |   Test Text |\n| :------------ | :---------: | ----------: |\n| Header        |    Title    | Here's this |\n| Paragraph     |    Text     |    And more |\n| Strikethrough |             |    ~~Text~~ |\n\n## Getting Started\n\nTo begin using the Documentation Template, follow these simple steps:\n\n* Start by cloning the repository to your local machine.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium. Optio, necessitatibus sequi. Veritatis, aspernatur? Possimus quis repellat eum vitae eveniet.\n\n## Blockquotes\n\nBlockquotes are useful for emphasizing key points or quoting external sources:\n\n> \"Documentation is a love letter that you write to your future self.\" - Damian Conway\n\nFeel free to use blockquotes to highlight important information or quotes relevant to your documentation.\n\n## Code Examples with switch\n\nHere a custom tab component from shadcn ui is used.\n\n## Conclusion\n\nThank you for choosing the Documentation Template for your project. Whether you're documenting software, APIs, or processes, we're here to support you in creating clear and effective documentation. Happy documenting!\n\n## Tabs Example\n",
-    "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam x write the press release update the website contact the media syntax description test text:------------ :---------: ----------:header title here s thisparagraph text and morestrikethrough text getting started to begin using the documentation template follow these simple steps: start by cloning the repository to your local machine lorem ipsum dolor sit amet consectetur adipisicing elit reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium optio necessitatibus sequi veritatis aspernatur possimus quis repellat eum vitae eveniet blockquotes blockquotes are useful for emphasizing key points or quoting external sources: documentation is a love letter that you write to your future self - damian conway feel free to use blockquotes to highlight important information or quotes relevant to your documentation code examples with switch here a custom tab component from shadcn ui is used conclusion thank you for choosing the documentation template for your project whether you re documenting software apis or processes we re here to support you in creating clear and effective documentation happy documenting tabs example",
-      "headings": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion",
-        "Tabs Example"
-      ],
-      "keywords": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion",
-        "Tabs Example"
-      ]
-    }
-  },
-  {
-    "slug": "/structure/deep",
-    "title": "Introduction",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n* \\[x] Write the press release\n* \\[ ] Update the website\n* \\[ ] Contact the media\n\n| Syntax        | Description |   Test Text |\r\n| :------------ | :---------: | ----------: |\r\n| Header        |    Title    | Here's this |\r\n| Paragraph     |    Text     |    And more |\r\n| Strikethrough |             |    ~~Text~~ |\n\n## Getting Started\n\nTo begin using the Documentation Template, follow these simple steps:\n\n* Start by cloning the repository to your local machine.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium. Optio, necessitatibus sequi. Veritatis, aspernatur? Possimus quis repellat eum vitae eveniet.\n\n## Blockquotes\n\nBlockquotes are useful for emphasizing key points or quoting external sources:\n\n> \"Documentation is a love letter that you write to your future self.\" - Damian Conway\n\nFeel free to use blockquotes to highlight important information or quotes relevant to your documentation.\n\n## Code Examples with switch\n\nHere a custom tab component from shadcn ui is used.\n\n## Conclusion\n\nThank you for choosing the Documentation Template for your project. Whether you're documenting software, APIs, or processes, we're here to support you in creating clear and effective documentation. Happy documenting!\n\n## Tabs Example\n",
-    "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam x write the press release update the website contact the media syntax description test text :------------ :---------: ----------: header title here s this paragraph text and more strikethrough text getting started to begin using the documentation template follow these simple steps: start by cloning the repository to your local machine lorem ipsum dolor sit amet consectetur adipisicing elit reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium optio necessitatibus sequi veritatis aspernatur possimus quis repellat eum vitae eveniet blockquotes blockquotes are useful for emphasizing key points or quoting external sources: documentation is a love letter that you write to your future self - damian conway feel free to use blockquotes to highlight important information or quotes relevant to your documentation code examples with switch here a custom tab component from shadcn ui is used conclusion thank you for choosing the documentation template for your project whether you re documenting software apis or processes we re here to support you in creating clear and effective documentation happy documenting tabs example",
-      "headings": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion",
-        "Tabs Example"
-      ],
-      "keywords": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion",
-        "Tabs Example"
-      ]
-    }
-  },
-  {
-    "slug": "/structure",
-    "title": "Structure",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n* \\[x] Write the press release\n* \\[ ] Update the website\n* \\[ ] Contact the media\n\n| Syntax        | Description |   Test Text |\n| :------------ | :---------: | ----------: |\n| Header        |    Title    | Here's this |\n| Paragraph     |    Text     |    And more |\n| Strikethrough |             |    ~~Text~~ |\n\n## Getting Started\n\nTo begin using the Documentation Template, follow these simple steps:\n\n* Start by cloning the repository to your local machine.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium. Optio, necessitatibus sequi. Veritatis, aspernatur? Possimus quis repellat eum vitae eveniet.\n\n## Blockquotes\n\nBlockquotes are useful for emphasizing key points or quoting external sources:\n\n> \"Documentation is a love letter that you write to your future self.\" - Damian Conway\n\nFeel free to use blockquotes to highlight important information or quotes relevant to your documentation.\n\n## Code Examples with switch\n\nHere a custom tab component from shadcn ui is used.\n\n## Conclusion\n\nThank you for choosing the Documentation Template for your project. Whether you're documenting software, APIs, or processes, we're here to support you in creating clear and effective documentation. Happy documenting!\n",
-    "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam x write the press release update the website contact the media syntax description test text:------------ :---------: ----------:header title here s thisparagraph text and morestrikethrough text getting started to begin using the documentation template follow these simple steps: start by cloning the repository to your local machine lorem ipsum dolor sit amet consectetur adipisicing elit reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium optio necessitatibus sequi veritatis aspernatur possimus quis repellat eum vitae eveniet blockquotes blockquotes are useful for emphasizing key points or quoting external sources: documentation is a love letter that you write to your future self - damian conway feel free to use blockquotes to highlight important information or quotes relevant to your documentation code examples with switch here a custom tab component from shadcn ui is used conclusion thank you for choosing the documentation template for your project whether you re documenting software apis or processes we re here to support you in creating clear and effective documentation happy documenting",
-      "headings": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion"
-      ],
-      "keywords": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion"
+        "KDMLink",
+        "introduction",
+        "logging",
+        "RaceChrono",
+        "Korean cars",
+        "What is KDMLink?",
+        "Who it's for",
+        "What you'll need",
+        "N-Link"
       ]
     }
   }

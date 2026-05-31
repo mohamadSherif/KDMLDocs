@@ -6,8 +6,16 @@ export const gtmconnected = false
 
 export const sitename = 'KDMLink'
 export const description =
-  'Official documentation for KDMLink — the tuning, logging, and diagnostics app for Korean cars. Install the app, connect your device, and get started.'
-export const keywords = ['KDMLink', 'tuning', 'diagnostics', 'ECU', 'Hyundai', 'Kia', 'Genesis', 'documentation']
+  'Official documentation for KDMLink — the logging and RaceChrono integration app for Korean cars. Install the app, connect your device, and get started.'
+export const keywords = [
+  'KDMLink',
+  'logging',
+  'RaceChrono',
+  'Hyundai',
+  'Kia',
+  'Genesis',
+  'documentation',
+]
 export const urlimage = '/images/og-image.png'
 export const imagealt = 'KDMLink Documentation'
 export const twitterhandle = '@KDMLink'

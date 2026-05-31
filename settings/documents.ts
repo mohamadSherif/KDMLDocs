@@ -7,12 +7,26 @@ export const Documents: Paths[] = [
     href: '/introduction',
   },
   {
+    title: 'Compatible Vehicles',
+    href: '/compatible-vehicles',
+  },
+  {
     title: 'Installation',
     href: '/installation',
     items: [
       {
         title: 'N-Link Hardware',
         href: '/n-link',
+        items: [
+          {
+            title: 'Plug and Play',
+            href: '/plug-and-play',
+          },
+          {
+            title: 'Wire Tap',
+            href: '/wire-tap',
+          },
+        ],
       },
       {
         title: 'App Install & Setup',
