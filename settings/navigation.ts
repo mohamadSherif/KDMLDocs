@@ -6,6 +6,10 @@ export const Navigations = [
     href: `/docs${PageRoutes[0].href}`,
   },
   {
+    title: 'Data Lab',
+    href: '/docs/blog',
+  },
+  {
     title: 'KDMLink',
     href: 'https://kdmlink.com',
     external: true,

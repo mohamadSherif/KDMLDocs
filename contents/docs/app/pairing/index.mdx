@@ -1,0 +1,182 @@
+---
+title: Pairing & Connecting
+description: How KDMLink pairs with your N-Link over Bluetooth on iOS and Android, and what happens during a connection.
+keywords: ["KDMLink", "N-Link", "pairing", "Bluetooth", "BLE", "iOS", "Android", "connect", "AccessorySetupKit", "CompanionDeviceManager"]
+---
+
+## Pairing & Connecting
+
+This page explains how the KDMLink app finds and pairs with your **N-Link** over Bluetooth, what
+each step of the connection means, and how the process differs between iPhone and Android. If
+you've already paired once and just need to reconnect — or you're switching phones — see
+[Re-pairing & Reconnecting](/docs/app/pairing/repairing).
+
+<Note type="note" title="Before you pair">
+Make sure the [N-Link hardware](/docs/installation/n-link) is installed and powered, your phone's
+Bluetooth is turned on, and the [KDMLink app](/docs/installation/app) is installed. The N-Link
+only powers up when the vehicle's ignition supplies power to it, so turn the car on first.
+</Note>
+
+## How KDMLink pairing works
+
+KDMLink does **not** scan for devices inside the app. Instead it hands off to your phone's
+operating system to run the pairing picker, so you choose your N-Link from a trusted system
+screen:
+
+- **iPhone (iOS 18 and later)** — uses Apple's **AccessorySetupKit** picker.
+- **Android (8.0 and later)** — uses Android's **CompanionDeviceManager** picker.
+
+In both cases the app filters the list down to N-Link hardware only (by its Bluetooth service ID
+and the `N-Link` name), so you should only ever see your own device. Once you pick it, the OS
+remembers the pairing and hands the app a private reference it uses to reconnect later — no
+scanning required next time.
+
+{/* VIDEO PLACEHOLDER: short screen recording of the full first-time pairing flow (open app → tap Pair → system picker → connected). Add once recorded. */}
+_🎥 Video placeholder — full first-time pairing walkthrough. To be added._
+
+## Pair your N-Link step by step
+
+<Step>
+<StepItem title="Power on the vehicle">
+
+Turn the car on so the N-Link receives power. Give it a few seconds to start advertising over
+Bluetooth.
+
+{/* IMAGE PLACEHOLDER: dashboard / ignition on, N-Link powered. */}
+_📷 Image placeholder — vehicle powered on with the N-Link installed. To be added._
+
+</StepItem>
+
+<StepItem title="Open KDMLink and start pairing">
+
+Open the app. On first launch you'll land on the **Connect Device** screen with a single
+**Pair Device** button. Tap it.
+
+The app will ask for Bluetooth permission the first time. Allow it — KDMLink needs it to talk to
+the N-Link.
+
+{/* IMAGE PLACEHOLDER: app Connect Device screen with the Pair Device button. */}
+_📷 Image placeholder — the in-app "Pair Device" screen. To be added._
+
+<Note type="note" title="Android permissions">
+On Android 12 and newer, KDMLink requests both **Nearby devices / Bluetooth Connect** and
+**Bluetooth Scan** permissions in a single prompt. Both are needed for a reliable data stream —
+grant both.
+</Note>
+
+</StepItem>
+
+<StepItem title="Pick your N-Link in the system picker">
+
+Your phone takes over and shows the system pairing sheet listing nearby **N-Link** devices.
+Select your N-Link to continue. If your phone shows a separate Bluetooth pairing confirmation,
+accept it.
+
+<Tabs defaultValue="ios">
+<TabsList>
+  <TabsTrigger value="ios">iPhone</TabsTrigger>
+  <TabsTrigger value="android">Android</TabsTrigger>
+</TabsList>
+
+<TabsContent value="ios">
+
+iOS shows the **AccessorySetupKit** sheet with the N-Link and its icon. Tap your device, then
+confirm. iOS handles the secure pairing in the background and stores the keys in the iOS
+keychain.
+
+{/* IMAGE PLACEHOLDER: iOS AccessorySetupKit picker showing the N-Link. */}
+_📷 Image placeholder — iOS system pairing sheet with the N-Link listed. To be added._
+
+</TabsContent>
+
+<TabsContent value="android">
+
+Android shows the **CompanionDeviceManager** dialog with the N-Link in the list. Tap your device,
+then tap **Allow / Pair**. If Android pops a standard Bluetooth pairing request, accept it to
+complete bonding.
+
+{/* IMAGE PLACEHOLDER: Android CompanionDeviceManager picker showing the N-Link. */}
+_📷 Image placeholder — Android system pairing sheet with the N-Link listed. To be added._
+
+</TabsContent>
+</Tabs>
+
+</StepItem>
+
+<StepItem title="Wait for the connection to finish">
+
+After you pick the device, the app connects automatically. You'll see the status move through a
+few stages — **Connecting → Pairing → Configuring → Connected** — and then live data begins to
+stream. This usually takes just a few seconds.
+
+{/* IMAGE PLACEHOLDER: app showing "Connecting…/Pairing…/Configuring…" progress states. */}
+_📷 Image placeholder — connection progress states in the app. To be added._
+
+</StepItem>
+
+<StepItem title="Confirm you're streaming">
+
+When the N-Link is connected and your car's data is coming through, the app shows **Connected**
+and live telemetry appears. You're done — the N-Link is now remembered and will reconnect on its
+own next time.
+
+{/* IMAGE PLACEHOLDER: app connected with live telemetry on screen. */}
+_📷 Image placeholder — successful connection with live data. To be added._
+
+</StepItem>
+</Step>
+
+## What happens during a connection
+
+When you pick your N-Link, KDMLink runs through a short sequence behind the scenes. Knowing the
+stages helps when something stalls:
+
+| Stage | What's happening |
+| --- | --- |
+| **Choose your N-Link** | The system picker is open, waiting for you to select the device. |
+| **Connecting** | The app opens the Bluetooth connection and negotiates the data packet size. |
+| **Pairing** | Your phone and the N-Link exchange security keys (bonding) so the link is encrypted. |
+| **Configuring** | The app reads the N-Link's firmware info and turns on the live data feed. |
+| **Connected / Streaming** | Live vehicle data is flowing. |
+| **Connected (no data)** | The link is up but no vehicle data is arriving — see the note below. |
+
+### Pairing differs slightly by platform
+
+The end result is the same — a secure, encrypted Bluetooth link — but the two operating systems
+get there differently:
+
+- **iPhone** — iOS completes a "Just Works" pairing automatically the first time the app reads
+  secured data from the N-Link, and saves the keys to the iOS keychain. The Bluetooth link may
+  briefly drop during this security handshake; iOS reconnects on its own, so a momentary blip
+  during first pairing is normal.
+- **Android** — Android creates the secure bond explicitly. You may see a one-time system
+  Bluetooth pairing prompt; accept it. Once bonded, the app confirms the encrypted link and
+  moves on.
+
+<Note type="warning" title="Connected, but no data?">
+If you reach **Connected (no data)**, the Bluetooth link is fine but the N-Link isn't seeing any
+vehicle data. The most common causes are the engine/ignition being off or the N-Link harness not
+being fully seated. Confirm the car is on and the [N-Link install](/docs/installation/n-link) is
+secure. The app keeps the connection alive and will start showing data as soon as it arrives.
+</Note>
+
+## Troubleshooting first-time pairing
+
+- **N-Link doesn't appear in the picker** — confirm the car is on and the N-Link has power, wait
+  a few seconds for it to start advertising, then tap **Pair Device** again. Make sure you're
+  close to the vehicle.
+- **Bluetooth is off** — the app will prompt you; turn Bluetooth on and retry.
+- **Permission denied** — if you declined the Bluetooth prompt, KDMLink can't connect. Enable
+  Bluetooth permission for KDMLink in your phone's **Settings**, then try again.
+- **iPhone says it needs iOS 18** — AccessorySetupKit pairing requires iOS 18 or later. Update
+  iOS, then retry.
+- **Pairing stalls or fails** — tap **Try again**. If it keeps failing, power the vehicle off and
+  back on to restart the N-Link, then pair again.
+
+{/* IMAGE PLACEHOLDER: app pairing-failed / error state with the "Try again" button. */}
+_📷 Image placeholder — the pairing error state. To be added._
+
+## Next step
+
+Already paired and just need to get back online, switch phones, or remove a device? See
+[Re-pairing & Reconnecting](/docs/app/pairing/repairing).

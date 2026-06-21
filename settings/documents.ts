@@ -41,5 +41,31 @@ export const Documents: Paths[] = [
     heading: 'The App',
     title: 'Overview',
     href: '/app',
+    items: [
+      {
+        title: 'Pairing & Connecting',
+        href: '/pairing',
+        items: [
+          {
+            title: 'Re-pairing & Reconnecting',
+            href: '/repairing',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    spacer: true,
+  },
+  {
+    heading: 'Data Lab',
+    title: 'Articles',
+    href: '/blog',
+    items: [
+      {
+        title: 'EK1 Pro vs. KDMLink',
+        href: '/ek1-pro-vs-kdmlink',
+      },
+    ],
   },
 ]

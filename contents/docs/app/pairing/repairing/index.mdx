@@ -1,0 +1,158 @@
+---
+title: Re-pairing & Reconnecting
+description: How KDMLink reconnects to a paired N-Link, how to forget a device, and how to re-pair after switching phones or clearing the bond.
+keywords: ["KDMLink", "N-Link", "re-pair", "reconnect", "forget device", "auto-connect", "Bluetooth", "iOS", "Android", "troubleshooting"]
+---
+
+## Re-pairing & Reconnecting
+
+Once you've [paired your N-Link](/docs/app/pairing) the first time, KDMLink remembers it and
+reconnects automatically — you normally never touch the pairing screen again. This page covers
+what "reconnecting" looks like day to day, the difference between **reconnecting** and
+**re-pairing**, how to **forget** a device, and how to recover when the connection won't come
+back.
+
+## Reconnecting vs. re-pairing
+
+These two sound alike but mean different things:
+
+- **Reconnecting** — re-establishing the Bluetooth link to a device you've **already paired**.
+  This is automatic and needs no system picker. It happens every time you start the car or open
+  the app.
+- **Re-pairing** — pairing the N-Link again **from scratch** through the system picker. You only
+  need this if the pairing was removed — for example you forgot the device, switched phones, or
+  cleared the bond in your phone's Bluetooth settings.
+
+## Automatic reconnect (the normal case)
+
+Because the pairing is owned by your phone's operating system, KDMLink doesn't scan or show a
+picker to reconnect. When the app opens or the N-Link powers up, it connects straight to the
+remembered device by its saved reference.
+
+- KDMLink keeps trying if the N-Link isn't in range yet, **backing off gradually** between
+  attempts (about 5s, then 10s, 20s, 40s, up to 60s) so it doesn't drain your battery.
+- If an active connection drops unexpectedly, the app attempts a quick reconnect within a couple
+  of seconds.
+
+{/* VIDEO PLACEHOLDER: screen recording showing the app auto-reconnecting on app open / car start. */}
+_🎥 Video placeholder — app reconnecting automatically. To be added._
+
+<Note type="note" title="iPhone background note">
+On iPhone, iOS sometimes pauses the data feed while the app is in the background. When you bring
+KDMLink back to the foreground it re-arms the feed automatically — a brief pause right after
+reopening the app is expected and recovers on its own.
+</Note>
+
+## Manage paired devices in the app
+
+The **Connections** screen lists your remembered N-Link devices and lets you connect, disconnect,
+or forget them.
+
+{/* IMAGE PLACEHOLDER: app Connections screen showing the status card and paired-devices list. */}
+_📷 Image placeholder — the Connections screen with a paired N-Link. To be added._
+
+- **Connect** — tap **Connect** on a remembered device to reconnect manually.
+- **Disconnect** — tap **Disconnect** to drop the link on purpose. While you stay disconnected
+  this way, the app won't auto-reconnect until you reconnect or reopen the app.
+- **Pair a new device** — opens the system picker to add another N-Link.
+- **Forget** — swipe a device left and confirm to remove it (see below).
+
+## Forget a device
+
+Forgetting removes the N-Link from KDMLink **and** clears the pairing your phone's operating
+system was holding. Use it when you're selling the N-Link, switching cars, or want a clean slate
+before re-pairing.
+
+<Step>
+<StepItem title="Open Connections">
+
+Go to the **Connections** screen where your paired N-Link is listed.
+
+</StepItem>
+
+<StepItem title="Swipe to forget">
+
+Swipe the device row to the left to reveal **Forget**, then confirm in the dialog. If the device
+is currently connected, KDMLink disconnects it first.
+
+{/* IMAGE PLACEHOLDER: swipe-to-forget action and the "Forget Device?" confirmation dialog. */}
+_📷 Image placeholder — the swipe-to-forget gesture and confirmation. To be added._
+
+</StepItem>
+</Step>
+
+After forgetting, the N-Link will **no longer auto-connect**. To use it again you'll need to
+re-pair it from the system picker.
+
+<Note type="warning" title="Forget in the app, not just in phone settings">
+Because pairing is managed by your phone's OS, removing the N-Link only from your phone's system
+**Bluetooth settings** can leave KDMLink and the OS out of sync. Always forget the device from the
+KDMLink **Connections** screen so both are cleared together.
+</Note>
+
+## Re-pair your N-Link
+
+Re-pair when the previous pairing is gone or broken. Common reasons:
+
+- You **forgot** the device (in the app or in your phone's Bluetooth settings).
+- You **switched to a new phone** — pairings don't transfer.
+- The N-Link was paired to **someone else's phone** and you're setting it up on yours.
+- The connection is stuck and a full reset is the fastest fix.
+
+The re-pair flow is the same as first-time pairing:
+
+<Step>
+<StepItem title="Remove the old pairing (if any)">
+
+If the device still shows in **Connections**, [forget it](#forget-a-device) first so you start
+clean.
+
+</StepItem>
+
+<StepItem title="Power on the vehicle">
+
+Turn the car on so the N-Link is powered and advertising.
+
+</StepItem>
+
+<StepItem title="Tap Pair a new device">
+
+On the **Connections** screen tap **Pair a new device** (or use **Pair Device** on the Connect
+screen). Your phone shows the system picker.
+
+</StepItem>
+
+<StepItem title="Select your N-Link and confirm">
+
+Pick your N-Link from the system list and confirm any Bluetooth pairing prompt, exactly as you
+did the first time. See [Pairing & Connecting](/docs/app/pairing) for the per-platform details.
+
+{/* IMAGE PLACEHOLDER: system picker during a re-pair (iOS and/or Android). */}
+_📷 Image placeholder — re-pairing through the system picker. To be added._
+
+</StepItem>
+</Step>
+
+## Troubleshooting reconnection
+
+- **Won't reconnect on its own** — make sure the car is on (the N-Link only has power with the
+  ignition on) and your phone is nearby with Bluetooth enabled. Open the **Connections** screen
+  and tap **Connect**.
+- **Stuck on "Connecting…"** — power the vehicle off and back on to restart the N-Link, then try
+  **Connect** again.
+- **Connected but no data** — the link is up but no vehicle data is arriving. Confirm the car is
+  running and the [N-Link install](/docs/installation/n-link) is fully seated. If it persists, a
+  forget-and-re-pair usually clears it.
+- **Keeps dropping mid-drive** — keep your phone within range and avoid blocking it with metal or
+  thick cases. If drops continue, forget the device and re-pair.
+- **Nothing works** — [forget the device](#forget-a-device) and [re-pair](#re-pair-your-n-link)
+  from scratch. This is the most reliable reset and clears any stale pairing on the phone.
+
+{/* VIDEO PLACEHOLDER: troubleshooting walkthrough — forget then re-pair to recover a stuck connection. */}
+_🎥 Video placeholder — forget-and-re-pair recovery. To be added._
+
+## Related
+
+- [Pairing & Connecting](/docs/app/pairing) — first-time setup and what each connection stage means.
+- [N-Link Hardware](/docs/installation/n-link) — install and power.
+- [App Install & Setup](/docs/installation/app) — download and first run.
