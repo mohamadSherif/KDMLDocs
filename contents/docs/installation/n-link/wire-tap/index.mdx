@@ -25,13 +25,37 @@ wire-tap vehicles are listed on [Compatible Vehicles](/docs/compatible-vehicles)
 
 <StepItem title="Match the wire colors">
 
-The wire colors on the N-Link CAN harness do not always match the vehicle's CAN harness colors. Use the table below to identify which wire taps into which:
+The wire colors on the N-Link CAN harness do not always match the vehicle's CAN harness colors. First identify which harness version you have, then use the matching table to identify which wire taps into which:
+
+- **V2 harness** — CAN wires are **yellow and green**
+- **V1 harness** — CAN wires are **white and red**
+
+<Tabs defaultValue="v2">
+<TabsList>
+  <TabsTrigger value="v2">V2 harness</TabsTrigger>
+  <TabsTrigger value="v1">V1 harness</TabsTrigger>
+</TabsList>
+
+<TabsContent value="v2">
+
+| N-Link CAN harness | Vehicle CAN harness |
+| --- | --- |
+| <span style={{display:'inline-block',width:'14px',height:'14px',borderRadius:'2px',backgroundColor:'#eab308',verticalAlign:'middle',marginRight:'8px'}} />Yellow | <span style={{display:'inline-block',width:'14px',height:'14px',borderRadius:'2px',backgroundColor:'#ffffff',border:'1px solid #888',verticalAlign:'middle',marginRight:'8px'}} />White |
+| <span style={{display:'inline-block',width:'14px',height:'14px',borderRadius:'2px',backgroundColor:'#16a34a',verticalAlign:'middle',marginRight:'8px'}} />Green | <span style={{display:'inline-block',width:'14px',height:'14px',borderRadius:'2px',backgroundColor:'#78350f',verticalAlign:'middle',marginRight:'8px'}} />Brown |
+| <span style={{display:'inline-block',width:'14px',height:'14px',borderRadius:'2px',backgroundColor:'#000000',verticalAlign:'middle',marginRight:'8px'}} />Black | <span style={{display:'inline-block',width:'14px',height:'14px',borderRadius:'2px',backgroundColor:'#000000',verticalAlign:'middle',marginRight:'8px'}} />Black |
+
+</TabsContent>
+
+<TabsContent value="v1">
 
 | N-Link CAN harness | Vehicle CAN harness |
 | --- | --- |
 | <span style={{display:'inline-block',width:'14px',height:'14px',borderRadius:'2px',backgroundColor:'#ffffff',border:'1px solid #888',verticalAlign:'middle',marginRight:'8px'}} />White | <span style={{display:'inline-block',width:'14px',height:'14px',borderRadius:'2px',backgroundColor:'#ffffff',border:'1px solid #888',verticalAlign:'middle',marginRight:'8px'}} />White |
 | <span style={{display:'inline-block',width:'14px',height:'14px',borderRadius:'2px',backgroundColor:'#dc2626',verticalAlign:'middle',marginRight:'8px'}} />Red | <span style={{display:'inline-block',width:'14px',height:'14px',borderRadius:'2px',backgroundColor:'#78350f',verticalAlign:'middle',marginRight:'8px'}} />Brown |
 | <span style={{display:'inline-block',width:'14px',height:'14px',borderRadius:'2px',backgroundColor:'#000000',verticalAlign:'middle',marginRight:'8px'}} />Black | <span style={{display:'inline-block',width:'14px',height:'14px',borderRadius:'2px',backgroundColor:'#000000',verticalAlign:'middle',marginRight:'8px'}} />Black |
+
+</TabsContent>
+</Tabs>
 
 </StepItem>
 
