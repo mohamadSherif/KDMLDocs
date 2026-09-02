@@ -1,16 +1,63 @@
 [
   {
+    "slug": "/app/dashboard",
+    "title": "Home Dashboard",
+    "description": "The customizable Home screen widget grid — tire pressure, temperatures, fuel, battery, turbo, power, and octane learning, all sourced from your vehicle's CAN bus.",
+    "content": "## Home Dashboard\n\nThe **Home** tab is a customizable grid of live widget cards, each showing a different set of\nvehicle data decoded from the CAN bus your **N-Link** is connected to. Add, remove, and reorder\nwidgets to build the dashboard that matters for your car.\n\n## Available widgets\n\nWhich widgets are available depends on your selected vehicle — for example, octane learning only\nappears for vehicles that support it.\n\nThe default layout on first launch pairs **Tire Pressure** and **Fuel** on top, a full-width\n**Car Health** card in the middle, then **Battery** and **Turbo** beneath, followed by **Power &\nTorque** and **Octane**.\n\n## Tap a card for details\n\nTapping any widget opens a full detail screen for that signal, including a short history chart\nwhere available (for example, Car Health shows recent coolant, oil, and ambient temperature\ntrends, not just the current reading).\n\n{/* IMAGE PLACEHOLDER: Home dashboard grid with several widget cards, and one detail screen opened from a tap. */}\n\n*📷 Image placeholder — the Home dashboard and a widget detail screen. To be added.*\n\n## Add, remove, and reorder widgets\n\n## Related\n\n* [Pairing & Connecting](/docs/app/pairing) — connect your N-Link before dashboard widgets show\n  live data.\n* [Data Lab: EK1 Pro vs. KDMLink](/docs/blog/ek1-pro-vs-kdmlink) — why KDMLink's direct CAN\n  capture gives these widgets a much higher update rate than diagnostic-polling loggers.\n",
+    "_searchMeta": {
+      "cleanContent": "home dashboard the home tab is a customizable grid of live widget cards each showing a different set of vehicle data decoded from the can bus your n-link is connected to add remove and reorder widgets to build the dashboard that matters for your car available widgets which widgets are available depends on your selected vehicle for example octane learning only appears for vehicles that support it the default layout on first launch pairs tire pressure and fuel on top a full-width car health card in the middle then battery and turbo beneath followed by power torque and octane tap a card for details tapping any widget opens a full detail screen for that signal including a short history chart where available for example car health shows recent coolant oil and ambient temperature trends not just the current reading image placeholder: home dashboard grid with several widget cards and one detail screen opened from a tap image placeholder the home dashboard and a widget detail screen to be added add remove and reorder widgets related pairing connecting connect your n-link before dashboard widgets show live data data lab: ek1 pro vs kdmlink why kdmlink s direct can capture gives these widgets a much higher update rate than diagnostic-polling loggers",
+      "headings": [
+        "Home Dashboard",
+        "Available widgets",
+        "Tap a card for details",
+        "Add, remove, and reorder widgets",
+        "Related"
+      ],
+      "keywords": [
+        "KDMLink",
+        "home",
+        "dashboard",
+        "widgets",
+        "TPMS",
+        "tire pressure",
+        "car health",
+        "battery",
+        "turbo",
+        "boost",
+        "power",
+        "torque",
+        "octane",
+        "CAN bus",
+        "Home Dashboard",
+        "Available widgets",
+        "Tap a card for details",
+        "Add, remove, and reorder widgets",
+        "Related",
+        "Home",
+        "N-Link",
+        "Tire Pressure",
+        "Fuel",
+        "Car Health",
+        "Battery",
+        "Turbo",
+        "Power &\nTorque",
+        "Octane"
+      ]
+    }
+  },
+  {
     "slug": "/app",
     "title": "Overview",
     "description": "An overview of the KDMLink app and its main features.",
-    "content": "## The App\n\nOnce installed and connected, KDMLink gives you a single place to monitor live data, record\nlogs, and connect those sessions with RaceChrono. This page is a high-level overview — each\nfeature will get its own page over time.\n\n## Main features\n\n## Dashboard\n\nReal-time gauges and sensor readouts. *Details to come.*\n\n## Data logging\n\nStart, stop, and save logs of your sessions for later review. *Details to come.*\n\n## RaceChrono integration\n\nConnect KDMLink data with RaceChrono for session review and lap analysis. *Details to come.*\n",
+    "content": "## The App\n\nOnce installed and connected, KDMLink gives you a single place to monitor live data, record\nlogs, and connect those sessions with RaceChrono. The app has four tabs — **Home**, **Live**,\n**Sessions**, and **Settings** — this page is a high-level overview of each; deeper features get\ntheir own page over time.\n\n## Main features\n\n## Home\n\nThe **Home** tab is a customizable dashboard of live widget cards — tire pressure, coolant/oil/\nambient temperature, fuel level, battery voltage, boost pressure, horsepower/torque, and octane\nlearning status — each sourced from your vehicle's CAN bus. Add, remove, and reorder widgets, and\ntap any card for a detail view with recent history. See\n[Home Dashboard](/docs/app/dashboard) for the full widget list and how to customize it.\n\n## Live\n\nThe **Live** tab is a real-time race dashboard with portrait and full-screen landscape layouts:\ngear, a segmented shift light bar, drive mode, and other live signals update continuously while\nthe N-Link is streaming data. *Full field-by-field details to come.*\n\n## Sessions (data logging)\n\nStart and stop recordings from the **Sessions** tab to log a drive for later review. Past\nsessions show peak values and personal records, and can be shared as a card image.\n*Full details to come.*\n\n## RaceChrono integration\n\nEnable RaceChrono in **Settings** to stream KDMLink's CAN-derived vehicle data into your\nRaceChrono sessions for lap analysis. *Full setup details to come.*\n",
     "_searchMeta": {
-      "cleanContent": "the app once installed and connected kdmlink gives you a single place to monitor live data record logs and connect those sessions with racechrono this page is a high-level overview each feature will get its own page over time main features dashboard real-time gauges and sensor readouts details to come data logging start stop and save logs of your sessions for later review details to come racechrono integration connect kdmlink data with racechrono for session review and lap analysis details to come",
+      "cleanContent": "the app once installed and connected kdmlink gives you a single place to monitor live data record logs and connect those sessions with racechrono the app has four tabs home live sessions and settings this page is a high-level overview of each deeper features get their own page over time main features home the home tab is a customizable dashboard of live widget cards tire pressure coolant oil ambient temperature fuel level battery voltage boost pressure horsepower torque and octane learning status each sourced from your vehicle s can bus add remove and reorder widgets and tap any card for a detail view with recent history see home dashboard for the full widget list and how to customize it live the live tab is a real-time race dashboard with portrait and full-screen landscape layouts: gear a segmented shift light bar drive mode and other live signals update continuously while the n-link is streaming data full field-by-field details to come sessions data logging start and stop recordings from the sessions tab to log a drive for later review past sessions show peak values and personal records and can be shared as a card image full details to come racechrono integration enable racechrono in settings to stream kdmlink s can-derived vehicle data into your racechrono sessions for lap analysis full setup details to come",
       "headings": [
         "The App",
         "Main features",
-        "Dashboard",
-        "Data logging",
+        "Home",
+        "Live",
+        "Sessions (data logging)",
         "RaceChrono integration"
       ],
       "keywords": [
@@ -21,9 +68,12 @@
         "RaceChrono",
         "The App",
         "Main features",
-        "Dashboard",
-        "Data logging",
-        "RaceChrono integration"
+        "Home",
+        "Live",
+        "Sessions (data logging)",
+        "RaceChrono integration",
+        "Sessions",
+        "Settings"
       ]
     }
   },

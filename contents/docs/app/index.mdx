@@ -7,37 +7,57 @@ keywords: ["KDMLink", "app", "features", "logging", "RaceChrono"]
 ## The App
 
 Once installed and connected, KDMLink gives you a single place to monitor live data, record
-logs, and connect those sessions with RaceChrono. This page is a high-level overview — each
-feature will get its own page over time.
+logs, and connect those sessions with RaceChrono. The app has four tabs — **Home**, **Live**,
+**Sessions**, and **Settings** — this page is a high-level overview of each; deeper features get
+their own page over time.
 
 ## Main features
 
 <CardGrid>
   <Card
-    subtitle="Live data"
-    title="Dashboard"
-    description="View real-time sensor data and gauges while you drive."
+    subtitle="Home"
+    title="Home Dashboard"
+    description="A customizable grid of widget cards for tire pressure, temperatures, fuel, battery, turbo, power, and octane learning."
+    href="/docs/app/dashboard"
   />
   <Card
-    subtitle="Logging"
+    subtitle="Live"
+    title="Race Dashboard"
+    description="Full-screen real-time gauges, gear, shift lights, and drive mode while you drive."
+  />
+  <Card
+    subtitle="Sessions"
     title="Data Logging"
-    description="Record sessions and review them later for analysis."
+    description="Record sessions, review peaks and personal records, and share results."
   />
   <Card
     subtitle="Integration"
     title="RaceChrono"
-    description="Use KDMLink data in your RaceChrono sessions."
+    description="Stream KDMLink's CAN data into RaceChrono sessions."
   />
 </CardGrid>
 
-## Dashboard
+## Home
 
-Real-time gauges and sensor readouts. _Details to come._
+The **Home** tab is a customizable dashboard of live widget cards — tire pressure, coolant/oil/
+ambient temperature, fuel level, battery voltage, boost pressure, horsepower/torque, and octane
+learning status — each sourced from your vehicle's CAN bus. Add, remove, and reorder widgets, and
+tap any card for a detail view with recent history. See
+[Home Dashboard](/docs/app/dashboard) for the full widget list and how to customize it.
 
-## Data logging
+## Live
 
-Start, stop, and save logs of your sessions for later review. _Details to come._
+The **Live** tab is a real-time race dashboard with portrait and full-screen landscape layouts:
+gear, a segmented shift light bar, drive mode, and other live signals update continuously while
+the N-Link is streaming data. _Full field-by-field details to come._
+
+## Sessions (data logging)
+
+Start and stop recordings from the **Sessions** tab to log a drive for later review. Past
+sessions show peak values and personal records, and can be shared as a card image.
+_Full details to come._
 
 ## RaceChrono integration
 
-Connect KDMLink data with RaceChrono for session review and lap analysis. _Details to come._
+Enable RaceChrono in **Settings** to stream KDMLink's CAN-derived vehicle data into your
+RaceChrono sessions for lap analysis. _Full setup details to come._

@@ -1,0 +1,105 @@
+---
+title: Home Dashboard
+description: The customizable Home screen widget grid — tire pressure, temperatures, fuel, battery, turbo, power, and octane learning, all sourced from your vehicle's CAN bus.
+keywords: ["KDMLink", "home", "dashboard", "widgets", "TPMS", "tire pressure", "car health", "battery", "turbo", "boost", "power", "torque", "octane", "CAN bus"]
+---
+
+## Home Dashboard
+
+The **Home** tab is a customizable grid of live widget cards, each showing a different set of
+vehicle data decoded from the CAN bus your **N-Link** is connected to. Add, remove, and reorder
+widgets to build the dashboard that matters for your car.
+
+<Note type="note" title="Live data only">
+Every widget needs an active [connection](/docs/app/pairing) to your N-Link with the vehicle
+running. If a widget has no data yet — for example the car isn't on, or that signal hasn't
+arrived — it shows an empty state instead of a stale or zero reading.
+</Note>
+
+## Available widgets
+
+<CardGrid>
+  <Card
+    subtitle="Tire Pressure"
+    title="TPMS"
+    description="Live pressure for all four tires."
+  />
+  <Card
+    subtitle="Car Temps"
+    title="Car Health"
+    description="Coolant, oil, and ambient temperature."
+  />
+  <Card
+    subtitle="Fuel"
+    title="Fuel Level"
+    description="Remaining fuel level."
+  />
+  <Card
+    subtitle="Battery"
+    title="Battery"
+    description="12V voltage and battery temperature."
+  />
+  <Card
+    subtitle="Turbo"
+    title="Turbo"
+    description="Boost pressure and intake temperature."
+  />
+  <Card
+    subtitle="Power"
+    title="Power & Torque"
+    description="Live horsepower and torque."
+  />
+  <Card
+    subtitle="Octane"
+    title="Octane Learning"
+    description="Fuel knock learning status."
+  />
+</CardGrid>
+
+Which widgets are available depends on your selected vehicle — for example, octane learning only
+appears for vehicles that support it.
+
+The default layout on first launch pairs **Tire Pressure** and **Fuel** on top, a full-width
+**Car Health** card in the middle, then **Battery** and **Turbo** beneath, followed by **Power &
+Torque** and **Octane**.
+
+## Tap a card for details
+
+Tapping any widget opens a full detail screen for that signal, including a short history chart
+where available (for example, Car Health shows recent coolant, oil, and ambient temperature
+trends, not just the current reading).
+
+{/* IMAGE PLACEHOLDER: Home dashboard grid with several widget cards, and one detail screen opened from a tap. */}
+_📷 Image placeholder — the Home dashboard and a widget detail screen. To be added._
+
+## Add, remove, and reorder widgets
+
+<Step>
+<StepItem title="Open Add Widget">
+
+On the Home tab, open the widget gallery to see every widget not currently on your dashboard,
+shown as live preview tiles.
+
+</StepItem>
+
+<StepItem title="Add a widget">
+
+Tap a widget in the gallery to add it to the bottom of your Home dashboard. Widgets already on
+Home appear dimmed in the gallery since they're already active.
+
+</StepItem>
+
+<StepItem title="Reorder or remove">
+
+From the Home screen, drag a widget to reorder it, or remove one you don't need. Your layout is
+saved on the device and persists across app restarts.
+
+</StepItem>
+</Step>
+
+## Related
+
+- [Pairing & Connecting](/docs/app/pairing) — connect your N-Link before dashboard widgets show
+  live data.
+- [Data Lab: EK1 Pro vs. KDMLink](/docs/blog/ek1-pro-vs-kdmlink) — why KDMLink's direct CAN
+  capture gives these widgets a much higher update rate than diagnostic-polling loggers.

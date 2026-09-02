@@ -52,6 +52,10 @@ export const Documents: Paths[] = [
           },
         ],
       },
+      {
+        title: 'Home Dashboard',
+        href: '/dashboard',
+      },
     ],
   },
   {
