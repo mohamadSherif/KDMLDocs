@@ -3,9 +3,9 @@
     "slug": "/app/dashboard",
     "title": "Home Dashboard",
     "description": "The customizable Home screen widget grid — tire pressure, temperatures, fuel, battery, turbo, power, and octane learning, all sourced from your vehicle's CAN bus.",
-    "content": "## Home Dashboard\n\nThe **Home** tab is a customizable grid of live widget cards, each showing a different set of\nvehicle data decoded from the CAN bus your **N-Link** is connected to. Add, remove, and reorder\nwidgets to build the dashboard that matters for your car.\n\n## Available widgets\n\nWhich widgets are available depends on your selected vehicle — for example, octane learning only\nappears for vehicles that support it.\n\nThe default layout on first launch pairs **Tire Pressure** and **Fuel** on top, a full-width\n**Car Health** card in the middle, then **Battery** and **Turbo** beneath, followed by **Power &\nTorque** and **Octane**.\n\n## Tap a card for details\n\nTapping any widget opens a full detail screen for that signal, including a short history chart\nwhere available (for example, Car Health shows recent coolant, oil, and ambient temperature\ntrends, not just the current reading).\n\n{/* IMAGE PLACEHOLDER: Home dashboard grid with several widget cards, and one detail screen opened from a tap. */}\n\n*📷 Image placeholder — the Home dashboard and a widget detail screen. To be added.*\n\n## Add, remove, and reorder widgets\n\n## Related\n\n* [Pairing & Connecting](/docs/app/pairing) — connect your N-Link before dashboard widgets show\n  live data.\n* [Octane Learning](/docs/app/dashboard/octane-learning) — the full explainer behind the Octane\n  Learning widget.\n* [Data Lab: EK1 Pro vs. KDMLink](/docs/blog/ek1-pro-vs-kdmlink) — why KDMLink's direct CAN\n  capture gives these widgets a much higher update rate than diagnostic-polling loggers.\n",
+    "content": "## Home Dashboard\n\nThe **Home** tab is a customizable grid of live widget cards, each showing a different set of\nvehicle data decoded from the CAN bus your **N-Link** is connected to. Add, remove, and reorder\nwidgets to build the dashboard that matters for your car.\n\nAbove the widget grid, supported vehicles show an interactive [3D model of your\ncar](/docs/app/dashboard/vehicle-viewer) instead of a static photo — see that page for rotating it\nand changing its paint.\n\n## Available widgets\n\nWhich widgets are available depends on your selected vehicle — for example, octane learning only\nappears for vehicles that support it.\n\nThe default layout on first launch pairs **Tire Pressure** and **Fuel** on top, a full-width\n**Car Health** card in the middle, then **Battery** and **Turbo** beneath, followed by **Power &\nTorque** and **Octane**.\n\n## Tap a card for details\n\nTapping any widget opens a full detail screen for that signal, including a short history chart\nwhere available (for example, Car Health shows recent coolant, oil, and ambient temperature\ntrends, not just the current reading).\n\n{/* IMAGE PLACEHOLDER: Home dashboard grid with several widget cards, and one detail screen opened from a tap. */}\n\n*📷 Image placeholder — the Home dashboard and a widget detail screen. To be added.*\n\n## Add, remove, and reorder widgets\n\n## Related\n\n* [Pairing & Connecting](/docs/app/pairing) — connect your N-Link before dashboard widgets show\n  live data.\n* [3D Vehicle Viewer](/docs/app/dashboard/vehicle-viewer) — the interactive car model above the\n  widget grid.\n* [Octane Learning](/docs/app/dashboard/octane-learning) — the full explainer behind the Octane\n  Learning widget.\n* [Data Lab: EK1 Pro vs. KDMLink](/docs/blog/ek1-pro-vs-kdmlink) — why KDMLink's direct CAN\n  capture gives these widgets a much higher update rate than diagnostic-polling loggers.\n",
     "_searchMeta": {
-      "cleanContent": "home dashboard the home tab is a customizable grid of live widget cards each showing a different set of vehicle data decoded from the can bus your n-link is connected to add remove and reorder widgets to build the dashboard that matters for your car available widgets which widgets are available depends on your selected vehicle for example octane learning only appears for vehicles that support it the default layout on first launch pairs tire pressure and fuel on top a full-width car health card in the middle then battery and turbo beneath followed by power torque and octane tap a card for details tapping any widget opens a full detail screen for that signal including a short history chart where available for example car health shows recent coolant oil and ambient temperature trends not just the current reading image placeholder: home dashboard grid with several widget cards and one detail screen opened from a tap image placeholder the home dashboard and a widget detail screen to be added add remove and reorder widgets related pairing connecting connect your n-link before dashboard widgets show live data octane learning the full explainer behind the octane learning widget data lab: ek1 pro vs kdmlink why kdmlink s direct can capture gives these widgets a much higher update rate than diagnostic-polling loggers",
+      "cleanContent": "home dashboard the home tab is a customizable grid of live widget cards each showing a different set of vehicle data decoded from the can bus your n-link is connected to add remove and reorder widgets to build the dashboard that matters for your car above the widget grid supported vehicles show an interactive 3d model of your car instead of a static photo see that page for rotating it and changing its paint available widgets which widgets are available depends on your selected vehicle for example octane learning only appears for vehicles that support it the default layout on first launch pairs tire pressure and fuel on top a full-width car health card in the middle then battery and turbo beneath followed by power torque and octane tap a card for details tapping any widget opens a full detail screen for that signal including a short history chart where available for example car health shows recent coolant oil and ambient temperature trends not just the current reading image placeholder: home dashboard grid with several widget cards and one detail screen opened from a tap image placeholder the home dashboard and a widget detail screen to be added add remove and reorder widgets related pairing connecting connect your n-link before dashboard widgets show live data 3d vehicle viewer the interactive car model above the widget grid octane learning the full explainer behind the octane learning widget data lab: ek1 pro vs kdmlink why kdmlink s direct can capture gives these widgets a much higher update rate than diagnostic-polling loggers",
       "headings": [
         "Home Dashboard",
         "Available widgets",
@@ -72,6 +72,37 @@
         "Confirming with a pull",
         "Related",
         "Verify with a Pull"
+      ]
+    }
+  },
+  {
+    "slug": "/app/dashboard/vehicle-viewer",
+    "title": "3D Vehicle Viewer",
+    "description": "The interactive 3D car on the Home tab — rotate it, hold to repaint it, and how the color you pick is saved.",
+    "content": "## 3D Vehicle Viewer\n\nAt the top of the **Home** tab, KDMLink renders your car as an interactive 3D model instead of a\nstatic photo — for the vehicles it has a model for. Drag left or right to spin it around, or press\nand hold it to change its paint.\n\n{/* IMAGE PLACEHOLDER: Home tab with the 3D car rendered above the widget grid. */}\n\n*📷 Image placeholder — the 3D vehicle viewer on Home. To be added.*\n\n## Rotating the car\n\nThe model is locked to a side-profile camera angle — it doesn't tilt up or down — but you can drag\nhorizontally to orbit it around and view any angle. Vertical drags pass through to the Home tab's\nscroll instead of moving the car.\n\n## Repainting your car\n\nPress and hold the car for about a second to open the **Paint** sheet.\n\n{/* IMAGE PLACEHOLDER: Paint sheet open over the 3D car — stock swatches and the color wheel. */}\n\n*📷 Image placeholder — the Paint sheet. To be added.*\n\n## If the model doesn't load\n\nIf the 3D model fails to load — a slow connection to a bundled asset, an unsupported device, or a\ntimeout — KDMLink falls back to the same static vehicle image used for cars without a 3D model, so\nHome always shows something in that spot.\n\n## Related\n\n* [Home Dashboard](/docs/app/dashboard) — the widget grid that sits below the vehicle viewer.\n* [Sessions](/docs/app/sessions) — shared session cards render your car using this same paint\n  color.\n",
+    "_searchMeta": {
+      "cleanContent": "3d vehicle viewer at the top of the home tab kdmlink renders your car as an interactive 3d model instead of a static photo for the vehicles it has a model for drag left or right to spin it around or press and hold it to change its paint image placeholder: home tab with the 3d car rendered above the widget grid image placeholder the 3d vehicle viewer on home to be added rotating the car the model is locked to a side-profile camera angle it doesn t tilt up or down but you can drag horizontally to orbit it around and view any angle vertical drags pass through to the home tab s scroll instead of moving the car repainting your car press and hold the car for about a second to open the paint sheet image placeholder: paint sheet open over the 3d car stock swatches and the color wheel image placeholder the paint sheet to be added if the model doesn t load if the 3d model fails to load a slow connection to a bundled asset an unsupported device or a timeout kdmlink falls back to the same static vehicle image used for cars without a 3d model so home always shows something in that spot related home dashboard the widget grid that sits below the vehicle viewer sessions shared session cards render your car using this same paint color",
+      "headings": [
+        "3D Vehicle Viewer",
+        "Rotating the car",
+        "Repainting your car",
+        "If the model doesn't load",
+        "Related"
+      ],
+      "keywords": [
+        "KDMLink",
+        "3D",
+        "vehicle viewer",
+        "car model",
+        "paint",
+        "color picker",
+        "Home",
+        "3D Vehicle Viewer",
+        "Rotating the car",
+        "Repainting your car",
+        "If the model doesn't load",
+        "Related",
+        "Paint"
       ]
     }
   },
@@ -327,6 +358,39 @@
         "Past Sessions",
         "Sharing a session",
         "Related"
+      ]
+    }
+  },
+  {
+    "slug": "/app/whats-new",
+    "title": "What's New Walkthrough",
+    "description": "The full-screen walkthrough KDMLink shows after install or an update that ships features worth announcing.",
+    "content": "## What's New Walkthrough\n\nKDMLink occasionally shows a short, full-screen walkthrough when you open the app — a handful of\nswipeable pages, each with a short looping demo clip, introducing a feature from a recent update.\n\n## When it appears\n\nThe walkthrough shows once, automatically, the first time you reach the main app after installing\nKDMLink or after updating to a version with new walkthrough content — you don't need to do\nanything to trigger it. Once you've seen a given walkthrough, KDMLink remembers that and won't\nshow it again unless a later update ships new content.\n\n{/* IMAGE PLACEHOLDER: What's New walkthrough — a page mid-swipe with its demo clip, title, and body text. */}\n\n*📷 Image placeholder — the What's New walkthrough. To be added.*\n\n## Current topics\n\n## Getting through it\n\n* **Swipe** left/right, or tap **Next**, to move between pages. Progress dots at the bottom show\n  where you are.\n* **Skip** (top right) closes the walkthrough immediately from any page except the last.\n* On the last page, **Skip** is replaced by **Done**, since that's how you'd normally finish it.\n* On Android, the system back button also closes it.\n\n## Related\n\n* [3D Vehicle Viewer](/docs/app/dashboard/vehicle-viewer) — the paint-picker walkthrough page\n  covers this feature.\n* [Home Dashboard](/docs/app/dashboard) — the widget-rearranging walkthrough page covers this\n  feature.\n",
+    "_searchMeta": {
+      "cleanContent": "what s new walkthrough kdmlink occasionally shows a short full-screen walkthrough when you open the app a handful of swipeable pages each with a short looping demo clip introducing a feature from a recent update when it appears the walkthrough shows once automatically the first time you reach the main app after installing kdmlink or after updating to a version with new walkthrough content you don t need to do anything to trigger it once you ve seen a given walkthrough kdmlink remembers that and won t show it again unless a later update ships new content image placeholder: what s new walkthrough a page mid-swipe with its demo clip title and body text image placeholder the what s new walkthrough to be added current topics getting through it swipe left right or tap next to move between pages progress dots at the bottom show where you are skip top right closes the walkthrough immediately from any page except the last on the last page skip is replaced by done since that s how you d normally finish it on android the system back button also closes it related 3d vehicle viewer the paint-picker walkthrough page covers this feature home dashboard the widget-rearranging walkthrough page covers this feature",
+      "headings": [
+        "What's New Walkthrough",
+        "When it appears",
+        "Current topics",
+        "Getting through it",
+        "Related"
+      ],
+      "keywords": [
+        "KDMLink",
+        "what's new",
+        "walkthrough",
+        "onboarding",
+        "update",
+        "release notes",
+        "What's New Walkthrough",
+        "When it appears",
+        "Current topics",
+        "Getting through it",
+        "Related",
+        "Swipe",
+        "Next",
+        "Skip",
+        "Done"
       ]
     }
   },

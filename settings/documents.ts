@@ -43,6 +43,10 @@ export const Documents: Paths[] = [
     href: '/app',
     items: [
       {
+        title: "What's New Walkthrough",
+        href: '/whats-new',
+      },
+      {
         title: 'Pairing & Connecting',
         href: '/pairing',
         items: [
@@ -56,6 +60,10 @@ export const Documents: Paths[] = [
         title: 'Home Dashboard',
         href: '/dashboard',
         items: [
+          {
+            title: '3D Vehicle Viewer',
+            href: '/vehicle-viewer',
+          },
           {
             title: 'Octane Learning',
             href: '/octane-learning',

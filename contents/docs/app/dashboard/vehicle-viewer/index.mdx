@@ -1,0 +1,73 @@
+---
+title: 3D Vehicle Viewer
+description: The interactive 3D car on the Home tab — rotate it, hold to repaint it, and how the color you pick is saved.
+keywords: ["KDMLink", "3D", "vehicle viewer", "car model", "paint", "color picker", "Home"]
+---
+
+## 3D Vehicle Viewer
+
+At the top of the **Home** tab, KDMLink renders your car as an interactive 3D model instead of a
+static photo — for the vehicles it has a model for. Drag left or right to spin it around, or press
+and hold it to change its paint.
+
+<Note type="note" title="Model availability depends on your vehicle">
+The 3D model currently covers the Hyundai Veloster N, Elantra N, and Kona N. Any other selected
+vehicle shows the standard static vehicle image instead, in the same spot.
+</Note>
+
+{/* IMAGE PLACEHOLDER: Home tab with the 3D car rendered above the widget grid. */}
+_📷 Image placeholder — the 3D vehicle viewer on Home. To be added._
+
+## Rotating the car
+
+The model is locked to a side-profile camera angle — it doesn't tilt up or down — but you can drag
+horizontally to orbit it around and view any angle. Vertical drags pass through to the Home tab's
+scroll instead of moving the car.
+
+## Repainting your car
+
+Press and hold the car for about a second to open the **Paint** sheet.
+
+<Step>
+<StepItem title="Hold the car">
+
+Press and hold anywhere on the 3D model. A short haptic tap confirms the paint sheet is opening.
+The Home tab stays visible and undimmed behind the sheet so you can see your changes as you make
+them.
+
+</StepItem>
+<StepItem title="Pick a color">
+
+Tap one of the five stock swatches (Phantom Black, Ultimate Red, Intense Blue, Atlas White,
+Performance Blue) for a one-tap repaint, or use the color wheel below it for any custom shade —
+drag around the wheel for hue and saturation, and use the bar underneath for brightness. The
+model repaints live as you drag.
+
+</StepItem>
+<StepItem title="Done">
+
+Tap **Done** to close the sheet. Your choice is saved for this vehicle and reloads the next time
+you open the app.
+
+</StepItem>
+</Step>
+
+{/* IMAGE PLACEHOLDER: Paint sheet open over the 3D car — stock swatches and the color wheel. */}
+_📷 Image placeholder — the Paint sheet. To be added._
+
+<Note type="note" title="Saved per vehicle">
+Paint color is remembered separately for each vehicle profile. It also carries over to other
+places KDMLink renders your car in 3D, such as shared [session](/docs/app/sessions) card images.
+</Note>
+
+## If the model doesn't load
+
+If the 3D model fails to load — a slow connection to a bundled asset, an unsupported device, or a
+timeout — KDMLink falls back to the same static vehicle image used for cars without a 3D model, so
+Home always shows something in that spot.
+
+## Related
+
+- [Home Dashboard](/docs/app/dashboard) — the widget grid that sits below the vehicle viewer.
+- [Sessions](/docs/app/sessions) — shared session cards render your car using this same paint
+  color.
