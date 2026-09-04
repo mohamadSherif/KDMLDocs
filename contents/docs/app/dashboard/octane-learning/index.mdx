@@ -1,0 +1,58 @@
+---
+title: Octane Learning
+description: What octane/knock learning is, how KDMLink tracks it from your CAN bus, and how to confirm it's finished after a refuel.
+keywords: ["KDMLink", "octane learning", "knock learning", "ECU relearn", "fuel quality", "WOT pull"]
+---
+
+## Octane Learning
+
+After every refuel, your ECU restarts its knock-adaptation cycle and temporarily caps peak boost
+until it verifies the new fuel's quality. The **Octane Learning** screen shows where your car is
+in that cycle. Open it from the **Octane Learning** widget on [Home](/docs/app/dashboard), or from
+the Fuel Quality card on the Turbo widget's detail screen.
+
+<Note type="note" title="Availability depends on your vehicle">
+Octane learning only appears for vehicles that support it — see the widget list on
+[Home Dashboard](/docs/app/dashboard).
+</Note>
+
+## Learning cycle
+
+The status hero at the top shows one of four phases:
+
+<CardGrid>
+  <Card subtitle="Waiting" title="Unknown" description="No vehicle data yet — connect and drive to establish status." />
+  <Card subtitle="After a refuel" title="Relearn Pending" description="The ECU needs to relearn the new fuel." />
+  <Card subtitle="In progress" title="Learning in Progress" description="Adaptation is underway this drive." />
+  <Card subtitle="Done" title="Learned" description="Knock learning is complete — full boost is available." />
+</CardGrid>
+
+A checklist below the status shows the same cycle as steps (relearn triggered, adaptation
+stage(s), learned), checking each one off as your car reports it.
+
+{/* IMAGE PLACEHOLDER: Octane Learning screen — status hero and learning-cycle checklist. */}
+_📷 Image placeholder — the Octane Learning screen. To be added._
+
+## Why it isn't always instant
+
+Your car doesn't broadcast the exact moment learning finishes. On vehicles that broadcast ECU
+progress flags, KDMLink reads those directly, but the final "Learned" confirmation can still lag
+a drive or two behind. On vehicles that don't broadcast progress at all, KDMLink tracks the cycle
+from the refuel itself and only confirms completion from the boost behavior of a full-throttle
+pull.
+
+## Confirming with a pull
+
+On vehicles without a broadcast status flag, the screen shows a **Verify with a Pull** section:
+on a closed course, one full-throttle pull through the vehicle's verification RPM band (shown on
+screen) in 3rd or 4th gear. KDMLink reads the boost behavior through that pull to confirm learned
+vs. still-clamped instantly, and shows the last pull's verdict.
+
+<Note type="warning" title="Closed-course only">
+Full-throttle verification pulls should only be done somewhere it's legal and safe to do so, like
+a track or closed course.
+</Note>
+
+## Related
+
+- [Home Dashboard](/docs/app/dashboard) — the Octane Learning widget that links here.

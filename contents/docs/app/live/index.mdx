@@ -1,0 +1,73 @@
+---
+title: Live Race Dashboard
+description: The full-screen real-time race dashboard — gear, RPM, shift lights, pedals, G-force, and drive mode, in portrait and landscape.
+keywords: ["KDMLink", "live", "race dashboard", "shift light", "gear", "RPM", "G-force", "drive mode", "landscape"]
+---
+
+## Live Race Dashboard
+
+The **Live** tab is a real-time dashboard built for driving, not just glancing at. It updates
+continuously while your N-Link is streaming, and switches layout automatically between portrait
+and landscape.
+
+<Note type="note" title="Live data only">
+Like the [Home dashboard](/docs/app/dashboard), every reading needs an active
+[connection](/docs/app/pairing) to your N-Link with the vehicle running. Fields show `--` instead
+of a stale or zero value when there's no live data.
+</Note>
+
+## Portrait: Command Deck
+
+Turn the phone upright for a scrollable "command deck" layout:
+
+- **Main card** — boost pressure and drive mode on the left, a large gear readout in the center,
+  RPM and speed on the right.
+- **Pedals** — horizontal throttle (THR) and brake (BRK) bars with live percentages.
+- **Engine tiles** — coolant temp, oil temp, intake temp, and oil pressure in a 2×2 grid.
+- **Tire pressure** — a plain FL / FR / RL / RR grid, in psi.
+- **Footer** — fuel level and 12V battery voltage.
+
+On tablets, the engine tile grid and tire pressure card sit side by side instead of stacking.
+
+{/* IMAGE PLACEHOLDER: Live tab portrait "Command Deck" layout on phone. */}
+_📷 Image placeholder — the Live tab in portrait. To be added._
+
+## Landscape: full-screen dashboard
+
+Rotate to landscape and the Live tab goes full-screen (status bar hidden) for an immersive
+dashboard:
+
+- **Top strip** — a segmented shift-light bar that fills up with RPM, a drive-mode badge, and a
+  LIVE/OFFLINE status pill.
+- **Center** — a large gear digit with a left/right steering-angle bar underneath.
+- **Side columns** — swipeable card stacks. The left column has boost/coolant/oil-temp/oil-pressure
+  tiles, a G-force card (lateral, longitudinal, and peak G with a live plot), and a second tile
+  page with fuel, odometer, ambient temperature, and voltage. The right column has a speed/RPM
+  card with throttle and brake bars, and a tire-pressure grid.
+- **Bottom strip** — telltale lamps for turn signals, ABS, ESC, TPMS, oil pressure, coolant/oil
+  temperature, battery, and fuel, each lighting up in its warning color when active.
+
+{/* IMAGE PLACEHOLDER: Live tab landscape full-screen dashboard. */}
+_📷 Image placeholder — the Live tab in landscape. To be added._
+
+<Note type="warning" title="Some telltales are always dark">
+Turn-signal and ABS lamps exist in the layout but have no CAN decode on any supported vehicle
+yet, so they never light up. This isn't a bug — it's reserved for future vehicle support.
+</Note>
+
+## Drive mode
+
+The mode box/badge shows your vehicle's active drive mode: **Normal**, **Eco**, **Sport**, **N**
+(shown with the N logo), or **Custom**.
+
+## G-force
+
+The G-force card plots your current lateral and longitudinal acceleration as a dot inside a
+2-ring gauge (rings at 1G and 2G), alongside live LAT/LON readings and the peak combined G
+recorded since you opened the tab.
+
+## Related
+
+- [Home Dashboard](/docs/app/dashboard) — the customizable widget grid on the Home tab.
+- [Sessions](/docs/app/sessions) — record what you see on Live for later review.
+- [Pairing & Connecting](/docs/app/pairing) — required before Live shows data.

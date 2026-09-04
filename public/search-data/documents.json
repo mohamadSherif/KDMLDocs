@@ -3,9 +3,9 @@
     "slug": "/app/dashboard",
     "title": "Home Dashboard",
     "description": "The customizable Home screen widget grid — tire pressure, temperatures, fuel, battery, turbo, power, and octane learning, all sourced from your vehicle's CAN bus.",
-    "content": "## Home Dashboard\n\nThe **Home** tab is a customizable grid of live widget cards, each showing a different set of\nvehicle data decoded from the CAN bus your **N-Link** is connected to. Add, remove, and reorder\nwidgets to build the dashboard that matters for your car.\n\n## Available widgets\n\nWhich widgets are available depends on your selected vehicle — for example, octane learning only\nappears for vehicles that support it.\n\nThe default layout on first launch pairs **Tire Pressure** and **Fuel** on top, a full-width\n**Car Health** card in the middle, then **Battery** and **Turbo** beneath, followed by **Power &\nTorque** and **Octane**.\n\n## Tap a card for details\n\nTapping any widget opens a full detail screen for that signal, including a short history chart\nwhere available (for example, Car Health shows recent coolant, oil, and ambient temperature\ntrends, not just the current reading).\n\n{/* IMAGE PLACEHOLDER: Home dashboard grid with several widget cards, and one detail screen opened from a tap. */}\n\n*📷 Image placeholder — the Home dashboard and a widget detail screen. To be added.*\n\n## Add, remove, and reorder widgets\n\n## Related\n\n* [Pairing & Connecting](/docs/app/pairing) — connect your N-Link before dashboard widgets show\n  live data.\n* [Data Lab: EK1 Pro vs. KDMLink](/docs/blog/ek1-pro-vs-kdmlink) — why KDMLink's direct CAN\n  capture gives these widgets a much higher update rate than diagnostic-polling loggers.\n",
+    "content": "## Home Dashboard\n\nThe **Home** tab is a customizable grid of live widget cards, each showing a different set of\nvehicle data decoded from the CAN bus your **N-Link** is connected to. Add, remove, and reorder\nwidgets to build the dashboard that matters for your car.\n\n## Available widgets\n\nWhich widgets are available depends on your selected vehicle — for example, octane learning only\nappears for vehicles that support it.\n\nThe default layout on first launch pairs **Tire Pressure** and **Fuel** on top, a full-width\n**Car Health** card in the middle, then **Battery** and **Turbo** beneath, followed by **Power &\nTorque** and **Octane**.\n\n## Tap a card for details\n\nTapping any widget opens a full detail screen for that signal, including a short history chart\nwhere available (for example, Car Health shows recent coolant, oil, and ambient temperature\ntrends, not just the current reading).\n\n{/* IMAGE PLACEHOLDER: Home dashboard grid with several widget cards, and one detail screen opened from a tap. */}\n\n*📷 Image placeholder — the Home dashboard and a widget detail screen. To be added.*\n\n## Add, remove, and reorder widgets\n\n## Related\n\n* [Pairing & Connecting](/docs/app/pairing) — connect your N-Link before dashboard widgets show\n  live data.\n* [Octane Learning](/docs/app/dashboard/octane-learning) — the full explainer behind the Octane\n  Learning widget.\n* [Data Lab: EK1 Pro vs. KDMLink](/docs/blog/ek1-pro-vs-kdmlink) — why KDMLink's direct CAN\n  capture gives these widgets a much higher update rate than diagnostic-polling loggers.\n",
     "_searchMeta": {
-      "cleanContent": "home dashboard the home tab is a customizable grid of live widget cards each showing a different set of vehicle data decoded from the can bus your n-link is connected to add remove and reorder widgets to build the dashboard that matters for your car available widgets which widgets are available depends on your selected vehicle for example octane learning only appears for vehicles that support it the default layout on first launch pairs tire pressure and fuel on top a full-width car health card in the middle then battery and turbo beneath followed by power torque and octane tap a card for details tapping any widget opens a full detail screen for that signal including a short history chart where available for example car health shows recent coolant oil and ambient temperature trends not just the current reading image placeholder: home dashboard grid with several widget cards and one detail screen opened from a tap image placeholder the home dashboard and a widget detail screen to be added add remove and reorder widgets related pairing connecting connect your n-link before dashboard widgets show live data data lab: ek1 pro vs kdmlink why kdmlink s direct can capture gives these widgets a much higher update rate than diagnostic-polling loggers",
+      "cleanContent": "home dashboard the home tab is a customizable grid of live widget cards each showing a different set of vehicle data decoded from the can bus your n-link is connected to add remove and reorder widgets to build the dashboard that matters for your car available widgets which widgets are available depends on your selected vehicle for example octane learning only appears for vehicles that support it the default layout on first launch pairs tire pressure and fuel on top a full-width car health card in the middle then battery and turbo beneath followed by power torque and octane tap a card for details tapping any widget opens a full detail screen for that signal including a short history chart where available for example car health shows recent coolant oil and ambient temperature trends not just the current reading image placeholder: home dashboard grid with several widget cards and one detail screen opened from a tap image placeholder the home dashboard and a widget detail screen to be added add remove and reorder widgets related pairing connecting connect your n-link before dashboard widgets show live data octane learning the full explainer behind the octane learning widget data lab: ek1 pro vs kdmlink why kdmlink s direct can capture gives these widgets a much higher update rate than diagnostic-polling loggers",
       "headings": [
         "Home Dashboard",
         "Available widgets",
@@ -46,12 +46,42 @@
     }
   },
   {
+    "slug": "/app/dashboard/octane-learning",
+    "title": "Octane Learning",
+    "description": "What octane/knock learning is, how KDMLink tracks it from your CAN bus, and how to confirm it's finished after a refuel.",
+    "content": "## Octane Learning\n\nAfter every refuel, your ECU restarts its knock-adaptation cycle and temporarily caps peak boost\nuntil it verifies the new fuel's quality. The **Octane Learning** screen shows where your car is\nin that cycle. Open it from the **Octane Learning** widget on [Home](/docs/app/dashboard), or from\nthe Fuel Quality card on the Turbo widget's detail screen.\n\n## Learning cycle\n\nThe status hero at the top shows one of four phases:\n\nA checklist below the status shows the same cycle as steps (relearn triggered, adaptation\nstage(s), learned), checking each one off as your car reports it.\n\n{/* IMAGE PLACEHOLDER: Octane Learning screen — status hero and learning-cycle checklist. */}\n\n*📷 Image placeholder — the Octane Learning screen. To be added.*\n\n## Why it isn't always instant\n\nYour car doesn't broadcast the exact moment learning finishes. On vehicles that broadcast ECU\nprogress flags, KDMLink reads those directly, but the final \"Learned\" confirmation can still lag\na drive or two behind. On vehicles that don't broadcast progress at all, KDMLink tracks the cycle\nfrom the refuel itself and only confirms completion from the boost behavior of a full-throttle\npull.\n\n## Confirming with a pull\n\nOn vehicles without a broadcast status flag, the screen shows a **Verify with a Pull** section:\non a closed course, one full-throttle pull through the vehicle's verification RPM band (shown on\nscreen) in 3rd or 4th gear. KDMLink reads the boost behavior through that pull to confirm learned\nvs. still-clamped instantly, and shows the last pull's verdict.\n\n## Related\n\n* [Home Dashboard](/docs/app/dashboard) — the Octane Learning widget that links here.\n",
+    "_searchMeta": {
+      "cleanContent": "octane learning after every refuel your ecu restarts its knock-adaptation cycle and temporarily caps peak boost until it verifies the new fuel s quality the octane learning screen shows where your car is in that cycle open it from the octane learning widget on home or from the fuel quality card on the turbo widget s detail screen learning cycle the status hero at the top shows one of four phases: a checklist below the status shows the same cycle as steps relearn triggered adaptation stage s learned checking each one off as your car reports it image placeholder: octane learning screen status hero and learning-cycle checklist image placeholder the octane learning screen to be added why it isn t always instant your car doesn t broadcast the exact moment learning finishes on vehicles that broadcast ecu progress flags kdmlink reads those directly but the final learned confirmation can still lag a drive or two behind on vehicles that don t broadcast progress at all kdmlink tracks the cycle from the refuel itself and only confirms completion from the boost behavior of a full-throttle pull confirming with a pull on vehicles without a broadcast status flag the screen shows a verify with a pull section: on a closed course one full-throttle pull through the vehicle s verification rpm band shown on screen in 3rd or 4th gear kdmlink reads the boost behavior through that pull to confirm learned vs still-clamped instantly and shows the last pull s verdict related home dashboard the octane learning widget that links here",
+      "headings": [
+        "Octane Learning",
+        "Learning cycle",
+        "Why it isn't always instant",
+        "Confirming with a pull",
+        "Related"
+      ],
+      "keywords": [
+        "KDMLink",
+        "octane learning",
+        "knock learning",
+        "ECU relearn",
+        "fuel quality",
+        "WOT pull",
+        "Octane Learning",
+        "Learning cycle",
+        "Why it isn't always instant",
+        "Confirming with a pull",
+        "Related",
+        "Verify with a Pull"
+      ]
+    }
+  },
+  {
     "slug": "/app",
     "title": "Overview",
     "description": "An overview of the KDMLink app and its main features.",
-    "content": "## The App\n\nOnce installed and connected, KDMLink gives you a single place to monitor live data, record\nlogs, and connect those sessions with RaceChrono. The app has four tabs — **Home**, **Live**,\n**Sessions**, and **Settings** — this page is a high-level overview of each; deeper features get\ntheir own page over time.\n\n## Main features\n\n## Home\n\nThe **Home** tab is a customizable dashboard of live widget cards — tire pressure, coolant/oil/\nambient temperature, fuel level, battery voltage, boost pressure, horsepower/torque, and octane\nlearning status — each sourced from your vehicle's CAN bus. Add, remove, and reorder widgets, and\ntap any card for a detail view with recent history. See\n[Home Dashboard](/docs/app/dashboard) for the full widget list and how to customize it.\n\n## Live\n\nThe **Live** tab is a real-time race dashboard with portrait and full-screen landscape layouts:\ngear, a segmented shift light bar, drive mode, and other live signals update continuously while\nthe N-Link is streaming data. *Full field-by-field details to come.*\n\n## Sessions (data logging)\n\nStart and stop recordings from the **Sessions** tab to log a drive for later review. Past\nsessions show peak values and personal records, and can be shared as a card image.\n*Full details to come.*\n\n## RaceChrono integration\n\nEnable RaceChrono in **Settings** to stream KDMLink's CAN-derived vehicle data into your\nRaceChrono sessions for lap analysis. *Full setup details to come.*\n",
+    "content": "## The App\n\nOnce installed and connected, KDMLink gives you a single place to monitor live data, record\nlogs, and connect those sessions with RaceChrono. The app has four tabs — **Home**, **Live**,\n**Sessions**, and **Settings** — this page is a high-level overview of each; deeper features get\ntheir own page over time.\n\n## Main features\n\n## Home\n\nThe **Home** tab is a customizable dashboard of live widget cards — tire pressure, coolant/oil/\nambient temperature, fuel level, battery voltage, boost pressure, horsepower/torque, and octane\nlearning status — each sourced from your vehicle's CAN bus. Add, remove, and reorder widgets, and\ntap any card for a detail view with recent history. See\n[Home Dashboard](/docs/app/dashboard) for the full widget list and how to customize it.\n\n## Live\n\nThe **Live** tab is a real-time race dashboard with portrait and full-screen landscape layouts:\ngear, a segmented shift light bar, drive mode, and other live signals update continuously while\nthe N-Link is streaming data. See [Live Race Dashboard](/docs/app/live) for the full field-by-field\nbreakdown of both layouts.\n\n## Sessions (data logging)\n\nStart and stop recordings from the **Sessions** tab to log a drive for later review. Past\nsessions show peak values and personal records, and can be shared as text or a card image. See\n[Sessions](/docs/app/sessions) for how recording, personal records, and sharing work.\n\n## RaceChrono integration\n\nEnable RaceChrono in **Settings** to stream KDMLink's CAN-derived vehicle data into your\nRaceChrono sessions for lap analysis. See [RaceChrono Integration](/docs/app/racechrono) for setup\nsteps.\n",
     "_searchMeta": {
-      "cleanContent": "the app once installed and connected kdmlink gives you a single place to monitor live data record logs and connect those sessions with racechrono the app has four tabs home live sessions and settings this page is a high-level overview of each deeper features get their own page over time main features home the home tab is a customizable dashboard of live widget cards tire pressure coolant oil ambient temperature fuel level battery voltage boost pressure horsepower torque and octane learning status each sourced from your vehicle s can bus add remove and reorder widgets and tap any card for a detail view with recent history see home dashboard for the full widget list and how to customize it live the live tab is a real-time race dashboard with portrait and full-screen landscape layouts: gear a segmented shift light bar drive mode and other live signals update continuously while the n-link is streaming data full field-by-field details to come sessions data logging start and stop recordings from the sessions tab to log a drive for later review past sessions show peak values and personal records and can be shared as a card image full details to come racechrono integration enable racechrono in settings to stream kdmlink s can-derived vehicle data into your racechrono sessions for lap analysis full setup details to come",
+      "cleanContent": "the app once installed and connected kdmlink gives you a single place to monitor live data record logs and connect those sessions with racechrono the app has four tabs home live sessions and settings this page is a high-level overview of each deeper features get their own page over time main features home the home tab is a customizable dashboard of live widget cards tire pressure coolant oil ambient temperature fuel level battery voltage boost pressure horsepower torque and octane learning status each sourced from your vehicle s can bus add remove and reorder widgets and tap any card for a detail view with recent history see home dashboard for the full widget list and how to customize it live the live tab is a real-time race dashboard with portrait and full-screen landscape layouts: gear a segmented shift light bar drive mode and other live signals update continuously while the n-link is streaming data see live race dashboard for the full field-by-field breakdown of both layouts sessions data logging start and stop recordings from the sessions tab to log a drive for later review past sessions show peak values and personal records and can be shared as text or a card image see sessions for how recording personal records and sharing work racechrono integration enable racechrono in settings to stream kdmlink s can-derived vehicle data into your racechrono sessions for lap analysis see racechrono integration for setup steps",
       "headings": [
         "The App",
         "Main features",
@@ -74,6 +104,54 @@
         "RaceChrono integration",
         "Sessions",
         "Settings"
+      ]
+    }
+  },
+  {
+    "slug": "/app/live",
+    "title": "Live Race Dashboard",
+    "description": "The full-screen real-time race dashboard — gear, RPM, shift lights, pedals, G-force, and drive mode, in portrait and landscape.",
+    "content": "## Live Race Dashboard\n\nThe **Live** tab is a real-time dashboard built for driving, not just glancing at. It updates\ncontinuously while your N-Link is streaming, and switches layout automatically between portrait\nand landscape.\n\n## Portrait: Command Deck\n\nTurn the phone upright for a scrollable \"command deck\" layout:\n\n* **Main card** — boost pressure and drive mode on the left, a large gear readout in the center,\n  RPM and speed on the right.\n* **Pedals** — horizontal throttle (THR) and brake (BRK) bars with live percentages.\n* **Engine tiles** — coolant temp, oil temp, intake temp, and oil pressure in a 2×2 grid.\n* **Tire pressure** — a plain FL / FR / RL / RR grid, in psi.\n* **Footer** — fuel level and 12V battery voltage.\n\nOn tablets, the engine tile grid and tire pressure card sit side by side instead of stacking.\n\n{/* IMAGE PLACEHOLDER: Live tab portrait \"Command Deck\" layout on phone. */}\n\n*📷 Image placeholder — the Live tab in portrait. To be added.*\n\n## Landscape: full-screen dashboard\n\nRotate to landscape and the Live tab goes full-screen (status bar hidden) for an immersive\ndashboard:\n\n* **Top strip** — a segmented shift-light bar that fills up with RPM, a drive-mode badge, and a\n  LIVE/OFFLINE status pill.\n* **Center** — a large gear digit with a left/right steering-angle bar underneath.\n* **Side columns** — swipeable card stacks. The left column has boost/coolant/oil-temp/oil-pressure\n  tiles, a G-force card (lateral, longitudinal, and peak G with a live plot), and a second tile\n  page with fuel, odometer, ambient temperature, and voltage. The right column has a speed/RPM\n  card with throttle and brake bars, and a tire-pressure grid.\n* **Bottom strip** — telltale lamps for turn signals, ABS, ESC, TPMS, oil pressure, coolant/oil\n  temperature, battery, and fuel, each lighting up in its warning color when active.\n\n{/* IMAGE PLACEHOLDER: Live tab landscape full-screen dashboard. */}\n\n*📷 Image placeholder — the Live tab in landscape. To be added.*\n\n## Drive mode\n\nThe mode box/badge shows your vehicle's active drive mode: **Normal**, **Eco**, **Sport**, **N**\n(shown with the N logo), or **Custom**.\n\n## G-force\n\nThe G-force card plots your current lateral and longitudinal acceleration as a dot inside a\n2-ring gauge (rings at 1G and 2G), alongside live LAT/LON readings and the peak combined G\nrecorded since you opened the tab.\n\n## Related\n\n* [Home Dashboard](/docs/app/dashboard) — the customizable widget grid on the Home tab.\n* [Sessions](/docs/app/sessions) — record what you see on Live for later review.\n* [Pairing & Connecting](/docs/app/pairing) — required before Live shows data.\n",
+    "_searchMeta": {
+      "cleanContent": "live race dashboard the live tab is a real-time dashboard built for driving not just glancing at it updates continuously while your n-link is streaming and switches layout automatically between portrait and landscape portrait: command deck turn the phone upright for a scrollable command deck layout: main card boost pressure and drive mode on the left a large gear readout in the center rpm and speed on the right pedals horizontal throttle thr and brake brk bars with live percentages engine tiles coolant temp oil temp intake temp and oil pressure in a 2 2 grid tire pressure a plain fl fr rl rr grid in psi footer fuel level and 12v battery voltage on tablets the engine tile grid and tire pressure card sit side by side instead of stacking image placeholder: live tab portrait command deck layout on phone image placeholder the live tab in portrait to be added landscape: full-screen dashboard rotate to landscape and the live tab goes full-screen status bar hidden for an immersive dashboard: top strip a segmented shift-light bar that fills up with rpm a drive-mode badge and a live offline status pill center a large gear digit with a left right steering-angle bar underneath side columns swipeable card stacks the left column has boost coolant oil-temp oil-pressure tiles a g-force card lateral longitudinal and peak g with a live plot and a second tile page with fuel odometer ambient temperature and voltage the right column has a speed rpm card with throttle and brake bars and a tire-pressure grid bottom strip telltale lamps for turn signals abs esc tpms oil pressure coolant oil temperature battery and fuel each lighting up in its warning color when active image placeholder: live tab landscape full-screen dashboard image placeholder the live tab in landscape to be added drive mode the mode box badge shows your vehicle s active drive mode: normal eco sport n shown with the n logo or custom g-force the g-force card plots your current lateral and longitudinal acceleration as a dot inside a 2-ring gauge rings at 1g and 2g alongside live lat lon readings and the peak combined g recorded since you opened the tab related home dashboard the customizable widget grid on the home tab sessions record what you see on live for later review pairing connecting required before live shows data",
+      "headings": [
+        "Live Race Dashboard",
+        "Portrait: Command Deck",
+        "Landscape: full-screen dashboard",
+        "Drive mode",
+        "G-force",
+        "Related"
+      ],
+      "keywords": [
+        "KDMLink",
+        "live",
+        "race dashboard",
+        "shift light",
+        "gear",
+        "RPM",
+        "G-force",
+        "drive mode",
+        "landscape",
+        "Live Race Dashboard",
+        "Portrait: Command Deck",
+        "Landscape: full-screen dashboard",
+        "Drive mode",
+        "Related",
+        "Live",
+        "Main card",
+        "Pedals",
+        "Engine tiles",
+        "Tire pressure",
+        "Footer",
+        "Top strip",
+        "Center",
+        "Side columns",
+        "Bottom strip",
+        "Normal",
+        "Eco",
+        "Sport",
+        "N",
+        "Custom"
       ]
     }
   },
@@ -189,6 +267,66 @@
         "Connected but no data",
         "Keeps dropping mid-drive",
         "Nothing works"
+      ]
+    }
+  },
+  {
+    "slug": "/app/racechrono",
+    "title": "RaceChrono Integration",
+    "description": "Stream KDMLink's CAN-derived vehicle data into RaceChrono over BLE using a per-vehicle channel definition file.",
+    "content": "## RaceChrono Integration\n\nKDMLink can stream your vehicle's live CAN data straight into [RaceChrono](https://racechrono.com)\nover Bluetooth, so you get KDMLink's engine, tire, and G-force channels alongside RaceChrono's lap\ntiming.\n\nThis is configured from **Settings → RaceChrono**.\n\n## Setup\n\n{/* IMAGE PLACEHOLDER: RaceChrono settings screen — vehicle card, BLE toggle, and Share .rcz File button. */}\n\n*📷 Image placeholder — the RaceChrono settings screen. To be added.*\n\n## In RaceChrono\n\nWith BLE Integration on and the channel file imported, add your N-Link as a sensor in RaceChrono\nand its KDMLink channels (from the imported `.rcz`) become available alongside RaceChrono's GPS-based\nlap timing.\n\n## Related\n\n* [Sessions](/docs/app/sessions) — KDMLink's own recording and playback, independent of RaceChrono.\n* [Pairing & Connecting](/docs/app/pairing) — connect your N-Link before enabling BLE Integration.\n",
+    "_searchMeta": {
+      "cleanContent": "racechrono integration kdmlink can stream your vehicle s live can data straight into racechrono over bluetooth so you get kdmlink s engine tire and g-force channels alongside racechrono s lap timing this is configured from settings racechrono setup image placeholder: racechrono settings screen vehicle card ble toggle and share rcz file button image placeholder the racechrono settings screen to be added in racechrono with ble integration on and the channel file imported add your n-link as a sensor in racechrono and its kdmlink channels from the imported rcz become available alongside racechrono s gps-based lap timing related sessions kdmlink s own recording and playback independent of racechrono pairing connecting connect your n-link before enabling ble integration",
+      "headings": [
+        "RaceChrono Integration",
+        "Setup",
+        "In RaceChrono",
+        "Related"
+      ],
+      "keywords": [
+        "KDMLink",
+        "RaceChrono",
+        "BLE",
+        "channel definition",
+        "rcz",
+        "lap timing",
+        "RaceChrono Integration",
+        "Setup",
+        "In RaceChrono",
+        "Related",
+        "Settings → RaceChrono",
+        ".rcz"
+      ]
+    }
+  },
+  {
+    "slug": "/app/sessions",
+    "title": "Sessions",
+    "description": "Record drives, track personal records, review peaks and charts, and share sessions from the Sessions tab.",
+    "content": "## Sessions\n\nThe **Sessions** tab records a drive's telemetry for later review, and tracks your all-time\npersonal bests across every recorded session.\n\n## Recording a session\n\n{/* IMAGE PLACEHOLDER: Sessions tab timer card, and the active recording screen with the live speed gauge. */}\n\n*📷 Image placeholder — starting and recording a session. To be added.*\n\n## Personal Records\n\nAbove your session history, KDMLink tracks lifetime bests across all recorded sessions:\n\nEach record shows the date it was set. Records update automatically as new sessions come in —\nthere's nothing to reset or configure.\n\n## Past Sessions\n\nEvery completed session appears as a card with its name, date, duration, top speed, and drive\nmode. Tap a card to open the full session detail, or swipe it away to delete (with a confirmation\nprompt first).\n\n### Session detail\n\nOpening a session shows its full peak stats — top speed, peak boost, peak RPM, max G, peak power,\nand peak torque — plus time-series charts for turbo boost, RPM, speed, and oil temperature over\nthe course of the drive.\n\n{/* IMAGE PLACEHOLDER: Session detail screen with peak stats and charts. */}\n\n*📷 Image placeholder — session detail with charts. To be added.*\n\n## Sharing a session\n\nSessions can be shared two ways from the session detail screen: as plain text summarizing the\ndrive, or as a shareable card image with the session's stats laid out for posting. Both use your\ndevice's native share sheet.\n\n## Related\n\n* [Live Race Dashboard](/docs/app/live) — what a session records while you drive.\n* [RaceChrono Integration](/docs/app/racechrono) — stream the same data into RaceChrono instead of\n  (or alongside) recording a KDMLink session.\n",
+    "_searchMeta": {
+      "cleanContent": "sessions the sessions tab records a drive s telemetry for later review and tracks your all-time personal bests across every recorded session recording a session image placeholder: sessions tab timer card and the active recording screen with the live speed gauge image placeholder starting and recording a session to be added personal records above your session history kdmlink tracks lifetime bests across all recorded sessions: each record shows the date it was set records update automatically as new sessions come in there s nothing to reset or configure past sessions every completed session appears as a card with its name date duration top speed and drive mode tap a card to open the full session detail or swipe it away to delete with a confirmation prompt first session detail opening a session shows its full peak stats top speed peak boost peak rpm max g peak power and peak torque plus time-series charts for turbo boost rpm speed and oil temperature over the course of the drive image placeholder: session detail screen with peak stats and charts image placeholder session detail with charts to be added sharing a session sessions can be shared two ways from the session detail screen: as plain text summarizing the drive or as a shareable card image with the session s stats laid out for posting both use your device s native share sheet related live race dashboard what a session records while you drive racechrono integration stream the same data into racechrono instead of or alongside recording a kdmlink session",
+      "headings": [
+        "Sessions",
+        "Recording a session",
+        "Personal Records",
+        "Past Sessions",
+        "Sharing a session",
+        "Related"
+      ],
+      "keywords": [
+        "KDMLink",
+        "sessions",
+        "recording",
+        "data logging",
+        "personal records",
+        "share",
+        "Sessions",
+        "Recording a session",
+        "Personal Records",
+        "Past Sessions",
+        "Sharing a session",
+        "Related"
       ]
     }
   },

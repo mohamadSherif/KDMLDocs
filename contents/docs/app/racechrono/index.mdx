@@ -1,0 +1,59 @@
+---
+title: RaceChrono Integration
+description: Stream KDMLink's CAN-derived vehicle data into RaceChrono over BLE using a per-vehicle channel definition file.
+keywords: ["KDMLink", "RaceChrono", "BLE", "channel definition", "rcz", "lap timing"]
+---
+
+## RaceChrono Integration
+
+KDMLink can stream your vehicle's live CAN data straight into [RaceChrono](https://racechrono.com)
+over Bluetooth, so you get KDMLink's engine, tire, and G-force channels alongside RaceChrono's lap
+timing.
+
+This is configured from **Settings → RaceChrono**.
+
+## Setup
+
+<Step>
+<StepItem title="Select a vehicle">
+
+RaceChrono channels are vehicle-specific. The RaceChrono settings screen shows the vehicle
+currently selected in Settings — pick one there first if none is shown.
+
+</StepItem>
+
+<StepItem title="Enable BLE Integration">
+
+Toggle **BLE Integration** on. This tells your N-Link to broadcast the RaceChrono BLE service so
+RaceChrono can find and connect to it as a sensor.
+
+</StepItem>
+
+<StepItem title="Export the channel file">
+
+Tap **Share .rcz File** to export your vehicle's Channel Definition File (`.rcz`) through your
+device's share sheet, then open it with RaceChrono to import all of KDMLink's CAN channels at
+once.
+
+</StepItem>
+</Step>
+
+{/* IMAGE PLACEHOLDER: RaceChrono settings screen — vehicle card, BLE toggle, and Share .rcz File button. */}
+_📷 Image placeholder — the RaceChrono settings screen. To be added._
+
+<Note type="warning" title="Channel file availability varies by vehicle">
+The `.rcz` channel file is only available for vehicles KDMLink has published one for. If yours
+isn't ready yet, the Share button is disabled and shows a "Coming Soon" badge — BLE Integration
+still works once a channel file is available.
+</Note>
+
+## In RaceChrono
+
+With BLE Integration on and the channel file imported, add your N-Link as a sensor in RaceChrono
+and its KDMLink channels (from the imported `.rcz`) become available alongside RaceChrono's GPS-based
+lap timing.
+
+## Related
+
+- [Sessions](/docs/app/sessions) — KDMLink's own recording and playback, independent of RaceChrono.
+- [Pairing & Connecting](/docs/app/pairing) — connect your N-Link before enabling BLE Integration.

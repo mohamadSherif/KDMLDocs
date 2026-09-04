@@ -55,6 +55,24 @@ export const Documents: Paths[] = [
       {
         title: 'Home Dashboard',
         href: '/dashboard',
+        items: [
+          {
+            title: 'Octane Learning',
+            href: '/octane-learning',
+          },
+        ],
+      },
+      {
+        title: 'Live Race Dashboard',
+        href: '/live',
+      },
+      {
+        title: 'Sessions',
+        href: '/sessions',
+      },
+      {
+        title: 'RaceChrono Integration',
+        href: '/racechrono',
       },
     ],
   },
