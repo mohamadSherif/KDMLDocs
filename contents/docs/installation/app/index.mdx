@@ -37,13 +37,67 @@ iOS vs. Android system pickers, permission prompts, and what each connection sta
 
 ## First-run configuration
 
-_To be transcribed — account setup, vehicle profile, units, telemetry preferences, etc. Needs
-Mobile Engineer input._
+There's no account or sign-in step — KDMLink works fully offline, with no login. On first launch
+you'll walk through a short setup flow before reaching the main app:
+
+<Step>
+<StepItem title="Welcome">
+
+A branding screen with a **Get Started** button. There's no skip option.
+
+</StepItem>
+
+<StepItem title="Vehicle selection (required)">
+
+Pick your **Brand → Model → Year → Transmission**. Continue is disabled until a full, valid
+vehicle is selected — this step can't be skipped, since your vehicle profile is what drives the
+Home dashboard's widgets and units.
+
+</StepItem>
+
+<StepItem title="Vehicle naming (required)">
+
+Give your vehicle a nickname (prefilled with the model name, so you can just tap through) and
+optionally pick a paint color for the [3D vehicle viewer](/docs/app/dashboard/vehicle-viewer).
+
+</StepItem>
+
+<StepItem title="Device pairing (optional)">
+
+Tap **Pair Device** to pair your N-Link now, or tap **Skip for now** and pair later. This is also
+where the Bluetooth permission prompt appears — see
+[Pairing & Connecting](/docs/app/pairing) for the full walkthrough. If you skip this step, you can
+pair anytime afterward from **Settings → Connections**.
+
+</StepItem>
+
+<StepItem title="Setup complete">
+
+A summary of your vehicle and connection status, with a **Continue to Dashboard** button that
+finishes setup and takes you to the main app.
+
+</StepItem>
+</Step>
+
+Unit preference (imperial/metric) is **not** part of first-run setup — it's a single toggle in
+**Settings → Units**, defaulting to imperial (°F, mph). There's no separate PSI/bar-specific
+control; it follows the same imperial/metric toggle.
 
 ## Updating the app
 
-_To be transcribed — how updates are delivered, when to update, firmware sync with N-Link. Needs
-Mobile Engineer input._
+Updates are delivered entirely through the **App Store** / **Play Store** — there's no in-app
+update prompt, and nothing you need to do manually beyond letting your phone update the app as
+usual.
+
+<Note type="note" title="App updates vs. N-Link firmware">
+Updating the KDMLink app is separate from updating your **N-Link's** firmware. Firmware updates
+are handled from **Settings → Firmware Update** and are pushed to the device itself over
+Bluetooth — see your N-Link hardware documentation for that process. An app update on its own
+does not require re-pairing your N-Link.
+</Note>
+
+After an update, you may see a one-time **What's New** walkthrough highlighting recent changes —
+this appears automatically and doesn't require any action.
 
 ## Troubleshooting
 
