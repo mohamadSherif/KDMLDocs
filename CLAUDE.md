@@ -17,9 +17,28 @@ Live doc pages (under `contents/docs/`):
 - `installation/` — install overview
 - `installation/n-link/` — N-Link hardware install hub
 - `installation/n-link/plug-and-play/` — PnP harness method
-- `installation/n-link/wire-tap/` — wire-tap method (latest commit `9c4cc31` added harness wiring + wire-color matching)
-- `installation/app/` — app install & setup
+- `installation/n-link/wire-tap/` — wire-tap method (harness wiring + wire-color matching)
+- `installation/app/` — app install & setup, including first-run onboarding and app/firmware update flow (DEV-13, Mobile Engineer-verified)
 - `app/` — "The App" overview
+- `app/whats-new/` — versioned What's New walkthrough
+- `app/pairing/` — pairing & connecting (BLE, AccessorySetupKit / CompanionDeviceManager)
+- `app/pairing/repairing/` — re-pairing & reconnecting
+- `app/dashboard/` — Home dashboard widget grid
+- `app/dashboard/vehicle-viewer/` — interactive 3D vehicle viewer
+- `app/dashboard/octane-learning/` — octane learning
+- `app/live/` — live race dashboard
+- `app/sessions/` — sessions
+- `app/racechrono/` — RaceChrono integration
+- `blog/` — Data Lab articles (`ek1-pro-vs-kdmlink/`)
+
+Not yet documented: Android Auto / CarPlay. As of 2026-09-12 this exists only as an unmerged
+engineering spike (`spike/carplay-android-auto` branch, DEV-17 in `kdm_link_app`) with documented
+non-functional gaps (CarPlay scene delegate doesn't reach the app's iOS bootstrap; Android Auto
+service registers the wrong template category) — do not write user-facing docs for it until it
+ships on `main` and is confirmed working. Same caution applies to the KDM-CAN-TP v1 transport
+protocol in `kdm_can_transport_proto` — it's a prototype/reference implementation explicitly
+"not yet integrated into `kdm_link_esp32_firmware`" per its own spec, so there's no user-visible
+CAN bus behavior change to document yet.
 
 The sidebar (`settings/documents.ts`) currently contains a known duplicate: both `/installation/app` (under Installation) and a bare `/app` (under "The App") point to different MDX files. Treat them as two distinct pages — the duplicate `href` value is intentional because parent concatenation differs.
 
