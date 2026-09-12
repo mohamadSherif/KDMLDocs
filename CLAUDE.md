@@ -23,11 +23,13 @@ Live doc pages (under `contents/docs/`):
 - `app/whats-new/` — versioned What's New walkthrough
 - `app/pairing/` — pairing & connecting (BLE, AccessorySetupKit / CompanionDeviceManager)
 - `app/pairing/repairing/` — re-pairing & reconnecting
-- `app/dashboard/` — Home dashboard widget grid
+- `app/dashboard/` — Home dashboard widget grid, including graph sharing on Car Health/Turbo/Power
+  & Torque (DEV-5, app-code-verified)
 - `app/dashboard/vehicle-viewer/` — interactive 3D vehicle viewer
 - `app/dashboard/octane-learning/` — octane learning
 - `app/live/` — live race dashboard
-- `app/sessions/` — sessions
+- `app/sessions/` — sessions, including the branded share-card flow (Stories/Messages/Photos/More)
+  for sessions and individual personal records (DEV-5, app-code-verified)
 - `app/racechrono/` — RaceChrono integration
 - `blog/` — Data Lab articles (`ek1-pro-vs-kdmlink/`)
 
@@ -39,6 +41,17 @@ ships on `main` and is confirmed working. Same caution applies to the KDM-CAN-TP
 protocol in `kdm_can_transport_proto` — it's a prototype/reference implementation explicitly
 "not yet integrated into `kdm_link_esp32_firmware`" per its own spec, so there's no user-visible
 CAN bus behavior change to document yet.
+
+DEV-5 audit (2026-09-12): cross-checked `app/sessions/` and `app/dashboard/` against
+`kdm_link_app` main (`d2d92a5`, the 2.0.0 release line). Found and fixed a stale description of
+sharing — the old text said sessions share as "plain text or a card image"; the actual flow is a
+branded share-card sheet (`custom_share_sheet.dart`) with Stories/Messages/Photos/More
+destinations, also used for individual personal records and for the Car Health/Turbo/Power & Torque
+dashboard graphs (`onShare` in their `*_detail_sheet.dart` widgets) — TPMS/Fuel/Battery detail
+screens have no share option. Everything else checked (4-tab nav, `app/index.mdx` high-level
+summary) still matches. Not yet re-audited this pass: `app/live/`, `app/racechrono/`,
+`installation/`, `app/pairing/` — worth another pass against current `main` before calling the
+guide fully caught up.
 
 The sidebar (`settings/documents.ts`) currently contains a known duplicate: both `/installation/app` (under Installation) and a bare `/app` (under "The App") point to different MDX files. Treat them as two distinct pages — the duplicate `href` value is intentional because parent concatenation differs.
 
